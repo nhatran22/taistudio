@@ -1,0 +1,38 @@
+[
+    {
+        "slug": "interior",
+        "titleEN": "Interior",
+        "titleVI": "Nội thất",
+        "cover": "/images/categories/interior.webp"
+    },
+    {
+        "slug": "exhibition",
+        "titleEN": "Exhibition",
+        "titleVI": "Triển lãm",
+        "cover": "/images/categories/exhibition.webp"
+    },
+    {
+        "slug": "decoration",
+        "titleEN": "Decoration",
+        "titleVI": "Trang trí",
+        "cover": "/images/categories/decoration.webp"
+    },
+    {
+        "slug": "urban",
+        "titleEN": "Urban & Landscape",
+        "titleVI": "Đô thị & Cảnh quan",
+        "cover": "/images/categories/urban.webp"
+    },
+    {
+        "slug": "engineering",
+        "titleEN": "Engineering",
+        "titleVI": "Kỹ thuật",
+        "cover": "/images/categories/engineering.webp"
+    },
+    {
+        "slug": "landscape",
+        "titleEN": "Landscape",
+        "titleVI": "Cảnh quan",
+        "cover": "/images/categories/landscape.webp"
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "slug": "luxury-villa",
+        "categorySlug": "interior",
+        "titleEN": "Luxury Villa",
+        "titleVI": "Biệt thự cao cấp",
+        "descriptionEN": "A premium villa interior focusing on natural light and tactile materials.",
+        "descriptionVI": "Không gian nội thất biệt thự cao cấp, nhấn mạnh ánh sáng tự nhiên và vật liệu chạm tay.",
+        "images": [
+            "/images/projects/luxury-villa/1.webp",
+            "/images/projects/luxury-villa/2.webp",
+            "/images/projects/luxury-villa/3.webp"
+        ]
+    },
+    {
+        "slug": "tech-expo-2025",
+        "categorySlug": "exhibition",
+        "titleEN": "Tech Expo 2025",
+        "titleVI": "Triển lãm Công nghệ 2025",
+        "descriptionEN": "Immersive exhibition design showcasing cutting-edge innovations.",
+        "descriptionVI": "Thiết kế triển lãm nhập vai, giới thiệu các đổi mới công nghệ tiên tiến.",
+        "images": [
+            "/images/projects/tech-expo-2025/1.webp",
+            "/images/projects/tech-expo-2025/2.webp",
+            "/images/projects/tech-expo-2025/3.webp"
+        ]
+    },
+    {
+        "slug": "artisan-decor-series",
+        "categorySlug": "decoration",
+        "titleEN": "Artisan Decor Series",
+        "titleVI": "Bộ sưu tập trang trí thủ công",
+        "descriptionEN": "A collection of handcrafted decorative pieces for modern spaces.",
+        "descriptionVI": "Bộ sưu tập sản phẩm trang trí thủ công cho không gian hiện đại.",
+        "images": [
+            "/images/projects/artisan-decor-series/1.webp",
+            "/images/projects/artisan-decor-series/2.webp"
+        ]
+    }
+]
