@@ -14,12 +14,12 @@ export async function generateStaticParams() {
     return SUPPORTED_LOCALES.map((locale) => ({ locale }));
 }
 
-export default async function Landing({ params }: { params: { locale: string } }) {
+export default async function Landing({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
-    const currentLocale = SUPPORTED_LOCALES.includes(locale as any)
+    const currentLocale = SUPPORTED_LOCALES.includes(locale as "en" | "vi")
         ? locale
         : "vi";
-    const dict = getDictionary(currentLocale);
+    const dict = await getDictionary(currentLocale);
     return (
         <div className="min-h-dvh flex flex-col">
             <main className="flex-1 px-6">

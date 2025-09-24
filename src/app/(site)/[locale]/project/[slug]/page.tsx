@@ -1,23 +1,25 @@
+import { Project } from "@/interface";
 import projects from "@/content/projects.json";
 import Image from "next/image";
 
-type Params = { params: { locale: string; slug: string } };
+interface Params { params: Promise<{ locale: string; slug: string }> };
 
 export const dynamic = "error";
 
 export async function generateStaticParams() {
     const locales = ["en", "vi"] as const;
     return locales.flatMap((locale) =>
-        (projects as any[]).map((p) => ({ locale, slug: p.slug }))
+        (projects as Project[]).map((p) => ({ locale, slug: p.slug }))
     );
 }
 
-export default function ProjectPage({ params }: Params) {
-    const project = (projects as any[]).find((p) => p.slug === params.slug);
+export default async function ProjectPage({ params }: Params) {
+    const { locale, slug } = await params;
+    const project = (projects as Project[]).find((p) => p.slug === slug);
     if (!project) return null;
-    const title = params.locale === "en" ? project.titleEN : project.titleVI;
+    const title = locale === "en" ? project.titleEN : project.titleVI;
     const desc =
-        params.locale === "en" ? project.descriptionEN : project.descriptionVI;
+        locale === "en" ? project.descriptionEN : project.descriptionVI;
     return (
         <div className="px-6 py-10">
             <h1 className="text-3xl font-semibold animate-in fade-in duration-300">{title}</h1>

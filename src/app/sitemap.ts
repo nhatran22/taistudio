@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import categories from "@/content/categories.json";
 import projects from "@/content/projects.json";
+import { Category, Project } from "@/interface";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
 
@@ -18,14 +19,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
 
     const categoryPages = locales.flatMap((locale) =>
-        (categories as any[]).map((c) => ({
+        (categories as Category[]).map((c) => ({
             url: `${BASE_URL}/${locale}/category/${c.slug}`,
             lastModified: new Date(),
         }))
     );
 
     const projectPages = locales.flatMap((locale) =>
-        (projects as any[]).map((p) => ({
+        (projects as Project[]).map((p) => ({
             url: `${BASE_URL}/${locale}/project/${p.slug}`,
             lastModified: new Date(),
         }))
