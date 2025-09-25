@@ -20,12 +20,12 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     const { locale } = await params;
     const lang = locale === "en" ? "en" : "vi";
     return (
-        <html lang={lang} suppressHydrationWarning>
-            <body>
-                <Header />
+        <>
+            <Header />
+            <main lang={lang} suppressHydrationWarning>
                 {children}
-            </body>
-        </html>
+            </main>
+        </>
     );
 }
 

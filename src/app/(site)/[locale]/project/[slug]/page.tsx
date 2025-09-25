@@ -28,7 +28,7 @@ export default async function ProjectPage({ params }: Params) {
                 {project.images.map((src: string, idx: number) => (
                     <div key={idx} className="relative aspect-[4/3] overflow-hidden rounded-md animate-in fade-in zoom-in-95 duration-300">
                         <Image
-                            src={src}
+                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop"
                             alt={title}
                             fill
                             className="object-cover transition-transform duration-300 hover:scale-105"

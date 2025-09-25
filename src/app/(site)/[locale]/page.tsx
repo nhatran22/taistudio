@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getDictionary } from "@/lib/i18n";
+import Image from "next/image";
 
 export const dynamic = "error";
 
@@ -27,17 +28,24 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                     <h1 className="text-3xl sm:text-5xl font-medium tracking-tight">{dict.slogan}</h1>
                     <p className="mt-3 text-muted-foreground max-w-xl">{dict.subtitle}</p>
                 </section>
-                <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <section className="grid grid-rows-1 gap-6">
                     {["interior", "exhibition", "decoration", "urban", "engineering", "landscape"].map(
                         (slug) => (
                             <Link
                                 key={slug}
                                 href={`/${locale}/category/${slug}`}
-                                className="group border rounded-lg overflow-hidden hover:shadow-md transition-shadow animate-in fade-in zoom-in-95 duration-300"
+                                className="group border rounded-lg overflow-hidden hover:shadow-md transition-shadow animate-in fade-in zoom-in-95 duration-1000"
                             >
-                                <div className="aspect-[16/10] bg-muted" />
+                                <div className="relative w-full h-[25vh] md:h-[50vh]">
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop"
+                                        alt={dict.categories[slug as keyof typeof dict.categories]}
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
                                 <div className="p-4 flex items-center justify-between">
-                                    <span className="font-medium capitalize">{dict.categories[slug as keyof typeof dict.categories]}</span>
+                                    <span className="font-bold text-xl capitalize">{dict.categories[slug as keyof typeof dict.categories]}</span>
                                     <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
                                 </div>
                             </Link>
