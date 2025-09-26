@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { useTheme } from "next-themes";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import ThemeToggle from "../ui/themeToggle";
+import { Search, Menu } from "lucide-react"; // Importing icons for search and menu
 
 const categories = [
     "interior",
@@ -16,13 +16,16 @@ const categories = [
     "landscape",
 ];
 
+// Define a type for the locales
+type Locale = "en" | "vi";
+
 export function Header() {
     const pathname = usePathname();
     const segments = pathname.split("/").filter(Boolean);
     const hasLocalePrefix = segments[0] === "en" || segments[0] === "vi";
-    const currentLocale = hasLocalePrefix ? (segments[0] as "en" | "vi") : "vi";
+    const currentLocale: Locale = hasLocalePrefix ? (segments[0] as Locale) : "vi";
 
-    const withLocale = (targetLocale: "en" | "vi") => {
+    const withLocale = (targetLocale: Locale) => {
         if (hasLocalePrefix) {
             const rest = segments.slice(1);
             return `/${targetLocale}/${rest.join("/")}`;
@@ -31,89 +34,98 @@ export function Header() {
         return `/en/${segments.join("/")}`.replace(/\/$/, "");
     };
 
+    // State for tracking scroll position for a simple background change (like the first image)
     const [scrolled, setScrolled] = useState(false);
+    // State for the hide/show on scroll behavior
+    const [visible, setVisible] = useState(true);
+    // State to handle the hover-like effect when the menu/sheet is open
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     const { resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
+    // Ref to store the last scroll position
+    const lastScrollY = useRef(0);
+
+    // Handler for hide-on-scroll-down/show-on-scroll-up
+    const handleScroll = useCallback(() => {
+        const currentScrollY = window.scrollY;
+
+        // Simple check for background change (scrolled > 50px)
+        setScrolled(currentScrollY > 50);
+
+        // Hide on scroll down, show on scroll up logic
+        if (currentScrollY > 100) { // Start hiding only after scrolling a bit
+            if (currentScrollY > lastScrollY.current && visible) {
+                // Scrolling down
+                setVisible(false);
+            } else if (currentScrollY < lastScrollY.current && !visible) {
+                // Scrolling up
+                setVisible(true);
+            }
+        } else {
+            // Always show the header at the very top of the page
+            setVisible(true);
+        }
+
+        lastScrollY.current = currentScrollY;
+    }, [visible]);
+
     useEffect(() => {
         setMounted(true);
-        const onScroll = () => setScrolled(window.scrollY > 50);
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [handleScroll]); // Dependency on handleScroll which depends on 'visible'
 
     if (!mounted) return null;
 
-    // Sửa: Loại bỏ gradient ở Light Mode khi chưa scroll (scrolled === false)
-    const unScrolledClasses = resolvedTheme === "dark"
-        ? "bg-gradient-to-b from-black/60 to-transparent text-white"
-        : "bg-transparent text-gray-900"; // Hoàn toàn trong suốt
+    // Determine the header's style based on scroll, menu state, and visibility
+    const baseClasses = `fixed top-0 left-0 w-full z-50 transition-all ease-in-out duration-300`;
 
-    const scrolledClasses = resolvedTheme === "dark"
-        ? "bg-gray-900 shadow-md text-white"
-        : "bg-white shadow-md text-gray-900";
+    // Style for the 'scrolled/dark' state (like image 2)
+    const darkStyle = "bg-gray-900 shadow-md text-white";
+    // Style for the 'top/transparent' state (like image 1)
+    const transparentStyle = "bg-gradient-to-b from-black/80 to-transparent text-white";
 
-    // Hàm helper để quản lý style của các nút (Switch Language và Menu)
-    const getButtonClasses = () => {
-        if (scrolled) {
-            // Khi đã scroll: sử dụng màu chuẩn của theme
-            return resolvedTheme === 'dark'
-                ? "text-white border-gray-700 bg-gray-800 hover:bg-gray-700"
-                : "text-gray-900 border-gray-300 bg-white hover:bg-gray-100";
-        }
+    // Determine background and text color based on states
+    let headerStyle = !scrolled && !isMenuOpen ? transparentStyle : darkStyle;
 
-        // Khi chưa scroll (Header trong suốt/gradient mờ):
-        if (resolvedTheme === 'dark') {
-            // Dark mode: Nút trong suốt, viền trắng, chữ trắng để nổi bật trên nền tối
-            return "text-white bg-transparent border-white hover:bg-white/10";
-        } else {
-            // Light mode: Nút trong suốt, viền tối, chữ tối để nổi bật trên nền sáng
-            return "text-white bg-transparent border-gray-400 hover:bg-gray-100";
-        }
-    }
+    // Apply visibility class
+    const visibilityClass = visible ? 'translate-y-0' : '-translate-y-full';
 
-    const getBrandClass = () => {
-        return resolvedTheme === 'dark' ? "text-white" : (scrolled ? "text-black" : "text-white")
-    }
+    // The component name on the left (using a placeholder like in your code)
+    const brandName = "Studio"; // You can change this to "Foster + Partners" if you like
 
     return (
         <header
-            className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled
-                ? scrolledClasses
-                : unScrolledClasses
-                }`}
+            className={`${baseClasses} ${headerStyle} ${visibilityClass}`}
         >
-            <div className="flex items-center justify-between px-6 py-4">
+            <div className="flex items-center justify-between px-6 py-4 transition-all duration-300">
+                {/* Brand Link (Styled like "Foster + Partners") */}
                 <Link
                     href={`/${currentLocale}`}
-                    className={`text-lg font-semibold tracking-wide ` + getBrandClass()}
+                    className={`text-lg font-normal tracking-wider uppercase text-white hover:opacity-80 transition-opacity`}
                 >
-                    Studio
+                    {brandName}
                 </Link>
 
-                <div className="flex items-center gap-2">
-                    <ThemeToggle className={getButtonClasses()} />
+                <div className="flex items-center gap-4">
+                    <Link
+                        href={withLocale(currentLocale === "en" ? "vi" : "en")}
+                        className="text-white text-sm font-light hover:opacity-80 transition-opacity uppercase"
+                        aria-label="Switch language"
+                    >
+                        {currentLocale === "en" ? "VI" : "EN"}
+                    </Link>
 
-                    {/* Locale switcher */}
-                    <Button variant="outline" size="sm" aria-label="Switch language" className={getButtonClasses()}>
-                        {/* Bỏ class text-black cứng và để cho parent Button quyết định màu chữ */}
-                        <Link
-                            href={withLocale(currentLocale === "en" ? "vi" : "en")}
-                            className="sm:inline text-sm hover:text-foreground transition-colors"
-                        >
-                            {currentLocale === "en" ? "VI" : "EN"}
-                        </Link>
-                    </Button>
-
-                    {/* Menu (Sheet) */}
-                    <Sheet>
+                    {/* Menu (Sheet) - Styled to look like the image's menu icon */}
+                    <Sheet onOpenChange={setIsMenuOpen}>
                         <SheetTrigger asChild>
-                            {/* Dùng getButtonClasses() cho Menu Button */}
-                            <Button variant="outline" size="sm" aria-label="Open menu" className={getButtonClasses()}>
-                                ☰
+                            <Button variant="ghost" size="sm" aria-label="Open menu" className="p-0 h-auto text-white hover:bg-transparent">
+                                <Menu className="h-6 w-6" />
                             </Button>
                         </SheetTrigger>
-                        {/* Sheet Content mặc định đã xử lý dark/light mode tốt */}
+                        {/* Sheet Content (Menu) */}
                         <SheetContent side="right" className="w-72">
                             <SheetHeader className="h-[50px] p-2">
                                 <SheetTitle className="max-h font-bold text-xl">Menu</SheetTitle>
@@ -123,7 +135,6 @@ export function Header() {
                                 {categories.map((slug) => (
                                     <SheetClose asChild key={slug}>
                                         <Link
-                                            key={slug}
                                             href={
                                                 "/" +
                                                 currentLocale +
