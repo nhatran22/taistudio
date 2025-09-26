@@ -2,10 +2,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, useCallback, useRef } from "react";
-import { useTheme } from "next-themes";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Search, Menu } from "lucide-react"; // Importing icons for search and menu
+import { Menu } from "lucide-react"; // Importing icons for search and menu
 
 const categories = [
     "interior",
@@ -40,8 +39,6 @@ export function Header() {
     const [visible, setVisible] = useState(true);
     // State to handle the hover-like effect when the menu/sheet is open
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const { resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
     // Ref to store the last scroll position
@@ -88,7 +85,7 @@ export function Header() {
     const transparentStyle = "bg-gradient-to-b from-black/80 to-transparent text-white";
 
     // Determine background and text color based on states
-    let headerStyle = !scrolled && !isMenuOpen ? transparentStyle : darkStyle;
+    const headerStyle = !scrolled && !isMenuOpen ? transparentStyle : darkStyle;
 
     // Apply visibility class
     const visibilityClass = visible ? 'translate-y-0' : '-translate-y-full';
