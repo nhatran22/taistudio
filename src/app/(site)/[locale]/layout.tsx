@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Header } from "@/components/site/Header";
 import type { Metadata } from "next";
+import { Providers } from "@/app/provider";
 
 interface LayoutProps {
     children: ReactNode;
@@ -21,10 +22,12 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     const lang = locale === "en" ? "en" : "vi";
     return (
         <>
-            <Header />
-            <main lang={lang} suppressHydrationWarning>
-                {children}
-            </main>
+            <Providers>
+                <Header />
+                <main lang={lang} suppressHydrationWarning>
+                    {children}
+                </main>
+            </Providers>
         </>
     );
 }
