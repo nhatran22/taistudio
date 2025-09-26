@@ -44,49 +44,49 @@ export function Header() {
 
     if (!mounted) return null;
 
-    // Tinh gọn logic cho Header và Logo/Brand (Studio)
-    const headerBaseClasses = "fixed top-0 left-0 w-full z-50 transition-colors duration-300";
+    // Sửa: Loại bỏ gradient ở Light Mode khi chưa scroll (scrolled === false)
+    const unScrolledClasses = resolvedTheme === "dark"
+        ? "bg-gradient-to-b from-black/60 to-transparent text-white"
+        : "bg-transparent text-gray-900"; // Hoàn toàn trong suốt
 
-    // 1. Logic cho Header background/text (khi SCROLLED)
     const scrolledClasses = resolvedTheme === "dark"
         ? "bg-gray-900 shadow-md text-white"
-        : "bg-white shadow-md text-gray-900"; // text-gray-900 cho logo
+        : "bg-white shadow-md text-gray-900";
 
-    // 2. Logic cho Header background/text (khi CHƯA SCROLL)
-    const unScrolledClasses = resolvedTheme === "dark"
-        ? "bg-gradient-to-b from-black/60 to-transparent text-white" // Logo màu trắng
-        : "bg-transparent text-gray-900"; // Logo màu tối
-
-    // 3. Hàm helper Tinh gọn cho các Button (Áp dụng cho ThemeToggle, VI/EN, Menu)
+    // Hàm helper để quản lý style của các nút (Switch Language và Menu)
     const getButtonClasses = () => {
         if (scrolled) {
-            // Khi đã scroll: sử dụng màu chuẩn của Header (scrolledClasses)
+            // Khi đã scroll: sử dụng màu chuẩn của theme
             return resolvedTheme === 'dark'
                 ? "text-white border-gray-700 bg-gray-800 hover:bg-gray-700"
                 : "text-gray-900 border-gray-300 bg-white hover:bg-gray-100";
         }
 
-        // Khi chưa scroll:
+        // Khi chưa scroll (Header trong suốt/gradient mờ):
         if (resolvedTheme === 'dark') {
-            // Dark mode: Nút trong suốt, viền trắng, chữ trắng (phù hợp với text-white của logo)
+            // Dark mode: Nút trong suốt, viền trắng, chữ trắng để nổi bật trên nền tối
             return "text-white bg-transparent border-white hover:bg-white/10";
         } else {
-            // Light mode: Nút trong suốt, viền tối, chữ tối.
-            // SỬA LỖI: Thay 'text-white' bằng 'text-gray-900' (phù hợp với text-gray-900 của logo)
-            return "text-gray-900 bg-transparent border-gray-400 hover:bg-gray-100";
+            // Light mode: Nút trong suốt, viền tối, chữ tối để nổi bật trên nền sáng
+            return "text-white bg-transparent border-gray-400 hover:bg-gray-100";
         }
+    }
+
+    const getBrandClass = () => {
+        return resolvedTheme === 'dark' ? "text-white" : (scrolled ? "text-black" : "text-white")
     }
 
     return (
         <header
-            className={`${headerBaseClasses} ${scrolled ? scrolledClasses : unScrolledClasses}`}
+            className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled
+                ? scrolledClasses
+                : unScrolledClasses
+                }`}
         >
             <div className="flex items-center justify-between px-6 py-4">
                 <Link
                     href={`/${currentLocale}`}
-                    // text-white/text-gray-900 đã được thiết lập qua unScrolledClasses/scrolledClasses
-                    // Chỉ cần dùng className đã có (text-white/text-gray-900)
-                    className="text-lg font-semibold tracking-wide"
+                    className={`text-lg font-semibold tracking-wide ` + getBrandClass()}
                 >
                     Studio
                 </Link>
@@ -95,16 +95,11 @@ export function Header() {
                     <ThemeToggle className={getButtonClasses()} />
 
                     {/* Locale switcher */}
-                    <Button
-                        variant="outline"
-                        size="sm"
-                        aria-label="Switch language"
-                        className={getButtonClasses()}
-                    >
+                    <Button variant="outline" size="sm" aria-label="Switch language" className={getButtonClasses()}>
+                        {/* Bỏ class text-black cứng và để cho parent Button quyết định màu chữ */}
                         <Link
                             href={withLocale(currentLocale === "en" ? "vi" : "en")}
-                            // Bỏ class hover:text-foreground để button classes quyết định màu
-                            className="sm:inline text-sm transition-colors"
+                            className="sm:inline text-sm hover:text-foreground transition-colors"
                         >
                             {currentLocale === "en" ? "VI" : "EN"}
                         </Link>
@@ -113,20 +108,18 @@ export function Header() {
                     {/* Menu (Sheet) */}
                     <Sheet>
                         <SheetTrigger asChild>
-                            <Button
-                                variant="outline"
-                                size="sm"
-                                aria-label="Open menu"
-                                className={getButtonClasses()}
-                            >
+                            {/* Dùng getButtonClasses() cho Menu Button */}
+                            <Button variant="outline" size="sm" aria-label="Open menu" className={getButtonClasses()}>
                                 ☰
                             </Button>
                         </SheetTrigger>
+                        {/* Sheet Content mặc định đã xử lý dark/light mode tốt */}
                         <SheetContent side="right" className="w-72">
                             <SheetHeader className="h-[50px] p-2">
                                 <SheetTitle className="max-h font-bold text-xl">Menu</SheetTitle>
                             </SheetHeader>
                             <nav className="grid gap-2">
+                                {/* ... links */}
                                 {categories.map((slug) => (
                                     <SheetClose asChild key={slug}>
                                         <Link
