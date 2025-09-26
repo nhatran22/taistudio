@@ -29,13 +29,13 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                     <HeroSection></HeroSection>
                 </section>
                 <section>
-                    <div className="grid grid-rows-1 gap-6 p-8 bg-muted">
+                    <div className="grid grid-rows-1 gap-6 p-8 bg-black">
                         {["interior", "exhibition", "decoration", "urban", "engineering", "landscape"].map(
                             (slug) => (
                                 <Link
                                     key={slug}
                                     href={`/${locale}/category/${slug}`}
-                                    className="group overflow-hidden hover:shadow-md transition-shadow animate-in fade-in zoom-in-95 duration-1000"
+                                    className="group overflow-hidden hover:shadow-md hover:border hover:rounded-lg transition-shadow animate-in fade-in zoom-in-95 duration-1000"
                                 >
                                     <div className="relative w-full h-[25vh] md:h-[50vh]">
                                         <Image
@@ -45,7 +45,7 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                             className="object-cover group-hover:scale-105 transition-transform duration-500"
                                         />
                                     </div>
-                                    <div className="p-4 flex items-center justify-between">
+                                    <div className="p-4 flex items-center justify-between text-white">
                                         <span className="font-bold text-xl capitalize">{dict.categories[slug as keyof typeof dict.categories]}</span>
                                         <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
                                     </div>
