@@ -1,7 +1,6 @@
 import { Project } from "@/interface";
 import projects from "@/content/projects.json";
 import Carousel3D from "@/components/site/imageCarousel";
-import { getDictionary } from "@/lib/i18n";
 
 interface PageProps {
     params: Promise<{ locale: string; slug: string }>;
@@ -44,7 +43,7 @@ export default async function CategoryPage({ params }: PageProps) {
     return (
         <div className="pt-24 pb-20 bg-white min-h-screen px-4 md:px-8">
             <div className="max-w-6xl mx-auto">
-                <h1 className="text-5xl md:text-6xl text-gray-900 font-serif font-bold max-w-4xl">
+                <h1 className="text-5xl md:text-6xl text-gray-900 ont-bold max-w-4xl">
                     {title}
                 </h1>
                 <p className="mt-6 text-gray-700 max-w-4xl text-lg md:text-xl">

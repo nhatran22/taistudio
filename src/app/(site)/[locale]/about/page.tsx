@@ -3,8 +3,6 @@ import { PageProps } from "@/interface";
 import projects from "@/content/projects.json";
 import AboutSection from "@/components/site/aboutSection";
 
-interface Params { params: Promise<{ locale: string; slug: string }> };
-
 export const dynamic = "error";
 
 const aboutContent = {
@@ -50,14 +48,14 @@ export default async function AboutPage({ params }: PageProps) {
             <div className="max-w-6xl mx-auto px-4 md:px-8">
 
                 {/* Tiêu đề phụ (Subtitle) - Serif, cỡ lớn, nhấn mạnh sự Trang nhã */}
-                <h1 className="text-6xl md:text-8xl text-gray-900 font-serif font-extrabold mb-4">
+                <h1 className="text-6xl md:text-8xl text-gray-900 font-extrabold mb-4">
                     {locale === 'vi' ? aboutContent.subtitleVI : aboutContent.subtitleEN}
                 </h1>
 
                 {/* Section Nội dung chi tiết */}
-                {data.map((section, index) => (
+                {data.map((section, idx) => (
                     <AboutSection
-                        key={index}
+                        key={slug + '_' + idx}
                         heading={section.heading}
                         body={section.body!}
                     />

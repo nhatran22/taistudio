@@ -1,5 +1,11 @@
 [
     {
+        "slug": "tanphong-house",
+        "titleEN": "Tan Phong House",
+        "titleVI": "Tan Phong House",
+        "cover": "/assets/tanphong-house/tanphong-house-cover.png"
+    },
+    {
         "slug": "lavazza-coffee",
         "titleEN": "Lavazza Coffee",
         "titleVI": "Lavazza Coffee",
@@ -9,12 +15,6 @@
         "slug": "printed-ritual",
         "titleEN": "Printed Ritual",
         "titleVI": "Printed Ritual",
-        "cover": "/assets/printed-ritual/printed-ritual-cover.png"
-    },
-    {
-        "slug": "tanphong-house",
-        "titleEN": "Tan Phong House",
-        "titleVI": "Tan Phong House",
-        "cover": "/assets/tanphong-house/tanphong-house-cover.png"
+        "cover": "/assets/printed-ritual/printed-ritual-4.png"
     }
 ]

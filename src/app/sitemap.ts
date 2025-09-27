@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 import categories from "@/content/categories.json";
-import projects from "@/content/projects.json";
-import { Category, Project } from "@/interface";
+import { Category } from "@/interface";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
 

@@ -27,7 +27,7 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
         <div className="min-h-dvh flex flex-col">
             <main className="flex-1">
                 <section className="animate-in fade-in slide-in-from-bottom-2 duration-500">
-                    <HeroSection></HeroSection>
+                    <HeroSection language={locale} />
                 </section>
                 {/* About Me Section */}
                 <section>
@@ -46,9 +46,12 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                                 <div className="absolute bottom-0 left-0 p-6 text-white z-10">
-                                    <span className="text-4xl md:text-5xl font-semibold drop-shadow-lg">
-                                        {currentLocale === "en" ? "About Me" : "Về Chúng Tôi"}
-                                    </span>
+                                    <p className="text-2xl md:text-2xl font-semibold drop-shadow-lg">
+                                        {currentLocale === 'vi' ? 'Về Chúng Tôi' : 'About Us'}
+                                    </p>
+                                    <p className="italic text-gray-500 font-light">
+                                        {currentLocale === 'vi' ? 'Khám phá ngay' : 'Discover now'}
+                                    </p>
                                 </div>
                             </div>
                         </Link>
@@ -79,7 +82,7 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                                         <div className="absolute bottom-0 left-0 p-6 text-white z-10">
-                                            <span className="text-4xl md:text-5xl font-semibold drop-shadow-lg">
+                                            <span className="text-2xl md:text-2xl font-semibold drop-shadow-lg">
                                                 {dict.categories[cat.slug as keyof typeof dict.categories]}
                                             </span>
                                         </div>

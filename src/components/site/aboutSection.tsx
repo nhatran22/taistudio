@@ -31,7 +31,7 @@ export default function AboutSection({ heading, body }: AboutSectionProps) {
 
             {/* Cột 1: Tiêu đề - Vị trí cố định (sticky) để dễ dàng cuộn */}
             <div className="md:col-span-1">
-                <h2 className="text-3xl font-serif font-semibold text-gray-900 sticky top-24">
+                <h2 className="text-3xl font-semibold text-gray-900 sticky top-24">
                     {heading}
                 </h2>
             </div>

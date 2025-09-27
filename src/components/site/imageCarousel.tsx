@@ -52,7 +52,7 @@ export default function Carousel3D({ images, title, lang }: { images: Array<Imag
                     slideShadows: false,
                 }}
                 modules={[EffectCoverflow, Navigation, Pagination]}
-                className="w-full h-[550px] md:h-[700px] pb-10"
+                className="w-full h-[550px] md:h-[600px] pb-10"
                 onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             >
                 {images.map((img, idx) => (
@@ -65,7 +65,7 @@ export default function Carousel3D({ images, title, lang }: { images: Array<Imag
                             src={img.src}
                             alt={`${title} ${idx}`}
                             fill
-                            className="object-cover md:object-cover shadow-xl rounded-none" // Bỏ rounded-xl, dùng shadow-xl tinh tế hơn
+                            className="object-cover md:object-contain shadow-xl rounded-none" // Bỏ rounded-xl, dùng shadow-xl tinh tế hơn
                         />
                     </SwiperSlide>
                 ))}
