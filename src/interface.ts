@@ -16,5 +16,10 @@ export interface Project {
 
 export interface Images {
     src: string,
-    description: string
+    descriptionVI: string,
+    descriptionEN: string
+}
+
+export interface PageProps {
+    params: Promise<{ locale: string; slug: string }>;
 }

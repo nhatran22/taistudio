@@ -25,13 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }))
     );
 
-    const projectPages = locales.flatMap((locale) =>
-        (projects as Project[]).map((p) => ({
-            url: `${BASE_URL}/${locale}/project/${p.slug}`,
-            lastModified: new Date(),
-        }))
-    );
-
     const aboutMePages = locales.flatMap((locale) => ({
         url: `${BASE_URL}/${locale}/about`,
         lastModified: new Date(),
@@ -43,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     }))
 
-    return [...staticPages, ...categoryPages, ...projectPages, ...aboutMePages];
+    return [...staticPages, ...categoryPages, ...aboutMePages];
 }
 
 

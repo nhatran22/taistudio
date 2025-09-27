@@ -9,11 +9,32 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import { useState } from "react";
-
-export default function Carousel3D({ images, title }: { images: Array<Images>; title: string }) {
+export default function Carousel3D({ images, title, lang }: { images: Array<Images>; title: string; lang: string }) {
     const [activeIndex, setActiveIndex] = useState(0);
+
+    const activeImageDesc = lang === 'vi'
+        ? images[activeIndex]?.descriptionVI
+        : images[activeIndex]?.descriptionEN;
+
+    const parseDescription = (description: string) => {
+        if (!description) return null;
+
+        // Tách chuỗi bằng dấu * (giả sử nội dung giữa các dấu * là phần highlight)
+        const parts = description.split('*');
+
+        return parts.map((part, index) => {
+            // Nếu index là số lẻ (1, 3, 5...), đó là phần nằm giữa hai dấu * -> Highlight
+            if (index % 2 !== 0) {
+                // Bạn có thể dùng class Tailwind để làm nổi bật (ví dụ: font-bold)
+                return <strong key={index} className="font-bold text-black">{part}</strong>;
+            }
+            // Nếu index là số chẵn, đó là văn bản thông thường
+            return <span key={index}>{part}</span>;
+        });
+    };
+
     return (
-        <div className="mt-10 max-w-5xl mx-auto">
+        <div className="mt-16 w-full">
             <Swiper
                 effect="coverflow"
                 grabCursor
@@ -31,28 +52,29 @@ export default function Carousel3D({ images, title }: { images: Array<Images>; t
                     slideShadows: false,
                 }}
                 modules={[EffectCoverflow, Navigation, Pagination]}
-                className="w-full h-[500px]"
+                className="w-full h-[550px] md:h-[700px] pb-10"
                 onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             >
-                {images.map((src, idx) => (
+                {images.map((img, idx) => (
+                    // Tăng chiều rộng/cao slide để tận dụng không gian
                     <SwiperSlide
                         key={idx}
-                        className="w-[600px] h-[400px] flex items-center justify-center"
+                        className="w-[700px] h-[450px] flex items-center justify-center"
                     >
                         <Image
-                            // src={src}
-                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop"
+                            src={img.src}
                             alt={`${title} ${idx}`}
                             fill
-                            className="object-cover rounded-xl shadow-lg"
+                            className="object-cover md:object-cover shadow-xl rounded-none" // Bỏ rounded-xl, dùng shadow-xl tinh tế hơn
                         />
                     </SwiperSlide>
                 ))}
             </Swiper>
 
-            <div className="mt-4 text-center max-w-2xl">
-                <p className="text-gray-700 text-lg">
-                    {images[activeIndex].description}
+            <div className="mt-8 mx-auto w-full px-4 md:px-0">
+                <p className="text-gray-700 text-base md:text-lg text-center">
+                    {/* Dùng hàm đã import */}
+                    {parseDescription(activeImageDesc)}
                 </p>
             </div>
         </div>

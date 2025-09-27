@@ -3,24 +3,38 @@
         "slug": "lavazza-coffee",
         "titleEN": "Lavazza Coffee",
         "titleVI": "Lavazza Coffee",
-        "descriptionEN": "A premium villa interior focusing on natural light and tactile materials.",
-        "descriptionVI": "Không gian nội thất biệt thự cao cấp, nhấn mạnh ánh sáng tự nhiên và vật liệu chạm tay.",
+        "descriptionEN": "This is *Lavazza's* \"*PERFÙRIA*\" conceptual project by *NGO DINH TAI*. The installation encourages customers to **smell the coffee aroma** like perfume, emphasizing notes like *FLORAL and WOODY*. The design features a modern, *brutalist-inspired cafe interior* with *concrete tables* and unique *bent light wood chairs*, blending high design with the innovative coffee scent ritual.",
+        "descriptionVI": "Đây là dự án ý tưởng \"*PERFÙRIA*\" của *NGO DINH TAI* dành cho **Lavazza**. Công trình khuyến khích khách hàng *ngửi hương thơm cà phê* như nước hoa, tập trung vào các nốt hương *HOA và GỖ*. Thiết kế nổi bật với *nội thất quán cà phê phong cách brutalist*, sử dụng *bàn bê tông* và *ghế gỗ uốn cong* độc đáo, kết hợp thiết kế hiện đại với nghi thức hương thơm cà phê sáng tạo.",
         "images": [
             {
-                "src": "/images/projects/tech-expo-2025/1.webp",
-                "description": "Lavazza Coffee Description 1"
+                "src": "/assets/lavazza-coffee/lavazza-coffee-cover.png",
+                "descriptionEN": "Exhibition display for the *\"PERFÙRIA\"* project by *NGO DINH TAI*, highlighting *FLORAL, WOODY, FRESH, and ORIENTAL* fragrance notes.",
+                "descriptionVI": "Khu trưng bày triển lãm dự án *\"PERFÙRIA\"* của *NGO DINH TAI*, làm nổi bật các nốt hương *HOA, GỖ, TƯƠI MÁT và PHƯƠNG ĐÔNG*."
             },
             {
-                "src": "/images/projects/tech-expo-2025/2.webp",
-                "description": "Lavazza Coffee Description 2"
+                "src": "/assets/lavazza-coffee/lavazza-coffee-1.png",
+                "descriptionEN": "A modern outdoor cafe seating area featuring minimalist square *concrete tables* and distinctive *bent light wood chairs*.",
+                "descriptionVI": "Khu vực chỗ ngồi ngoài trời hiện đại với những chiếc *bàn bê tông* vuông tối giản và *ghế gỗ sáng màu uốn cong* độc đáo."
             },
             {
-                "src": "/images/projects/tech-expo-2025/3.webp",
-                "description": "Lavazza Coffee Description 3"
+                "src": "/assets/lavazza-coffee/lavazza-coffee-2.png",
+                "descriptionEN": "A rendered interior of the *\"PERFUMIA\"* cafe concept with a tiered, curved layout. It features a consistent *concrete material palette* and the signature bent wood chairs.",
+                "descriptionVI": "Không gian nội thất mô phỏng quán cà phê *\"PERFUMIA\"* với bố cục cong, phân tầng. Thiết kế sử dụng tông *vật liệu bê tông* đồng nhất và ghế gỗ uốn cong đặc trưng."
             },
             {
-                "src": "/images/projects/tech-expo-2025/3.webp",
-                "description": "Lavazza Coffee Description 4"
+                "src": "/assets/lavazza-coffee/lavazza-coffee-3.png",
+                "descriptionEN": "An informational panel detailing the *\"PERFÙRIA\"* project, proposing a new ritual for coffee lovers to *smell the aroma* like perfume.",
+                "descriptionVI": "Tấm bảng thông tin chi tiết về dự án *\"PERFÙRIA\"*, đề xuất nghi thức mới cho người yêu cà phê để *ngửi hương thơm* giống như nước hoa."
+            },
+            {
+                "src": "/assets/lavazza-coffee/lavazza-coffee-4.png",
+                "descriptionEN": "Close-up of the *\"PERFÙRIA\"* display stand by *NGO DINH TAI*, showing two translucent *vessel prototypes* on the white pedestal.",
+                "descriptionVI": "Cận cảnh quầy trưng bày *\"PERFÙRIA\"* của *NGO DINH TAI*, thể hiện hai *mẫu vật chứa* mờ trên bệ trắng."
+            },
+            {
+                "src": "/assets/lavazza-coffee/lavazza-coffee-5.png",
+                "descriptionEN": "A geometric still-life composition of various clear and opaque *drinking vessels/glasses* with faceted designs, arranged on a tiered platform made of rough *gray concrete*.",
+                "descriptionVI": "Bố cục tĩnh vật hình học của nhiều loại *bình/ly uống* (trong suốt và đục) với các thiết kế cắt mặt, được sắp xếp trên một bệ đỡ bậc thang làm bằng *bê tông xám* thô."
             }
         ]
     },
@@ -28,20 +42,33 @@
         "slug": "printed-ritual",
         "titleEN": "Printed Ritual",
         "titleVI": "Printed Ritual",
-        "descriptionEN": "Immersive exhibition design showcasing cutting-edge innovations.",
-        "descriptionVI": "Thiết kế triển lãm nhập vai, giới thiệu các đổi mới công nghệ tiên tiến.",
+        "descriptionEN": "This project is a modular art installation, defined by its use of *vibrant color* and *Japanese-inspired printed graphics* (possibly ukiyo-e or manga). Constructed from *light wooden frames* and *semi-transparent printed panels*, the work creates an *immersive, maze-like environment* outdoors, often featuring a *performance element* such as the textile-covered mannequins seen inside.",
+        "descriptionVI": "Dự án này là một công trình sắp đặt nghệ thuật mô-đun, được xác định bởi việc sử dụng *màu sắc rực rỡ* và *đồ họa in ấn lấy cảm hứng từ Nhật Bản* (có thể là ukiyo-e hoặc manga). Được xây dựng từ *khung gỗ nhẹ* và *các tấm in bán trong suốt*, tác phẩm tạo ra một *môi trường sống động, giống như mê cung* ngoài trời, thường bao gồm *yếu tố trình diễn* như ma-nơ-canh bọc vải được nhìn thấy bên trong.",
         "images": [
             {
-                "src": "/images/projects/tech-expo-2025/1.webp",
-                "description": "Printed Ritual Description 1"
+                "src": "/assets/printed-ritual/printed-ritual-cover.png",
+                "descriptionEN": "A wide exterior view of the modular art installation under a *clear blue sky*. The structure consists of multiple *wooden-framed cubes* and walls covered in *bold, colorful prints* and patterns, creating an *immersive, maze-like environment*.",
+                "descriptionVI": "Một góc nhìn ngoại thất rộng của công trình nghệ thuật mô-đun dưới *bầu trời xanh quang đãng*. Cấu trúc bao gồm nhiều *khối hộp khung gỗ* và các bức tường được bao phủ bởi *các bản in và hoa văn đậm nét, đầy màu sắc*, tạo ra một *môi trường sống động, giống như mê cung*."
             },
             {
-                "src": "/images/projects/tech-expo-2025/2.webp",
-                "description": "Printed Ritual Description 2"
+                "src": "/assets/printed-ritual/printed-ritual-1.png",
+                "descriptionEN": "A view through the *vibrant pink and blue entrance* of the wooden framed installation, featuring dense *Japanese characters* and graphics. A mannequin wearing a garment covered in faces is visible inside, surrounded by lush greenery.",
+                "descriptionVI": "Khung cảnh nhìn xuyên qua *lối vào màu hồng và xanh lam rực rỡ* của công trình khung gỗ, nổi bật với các *chữ cái và đồ họa tiếng Nhật* dày đặc. Một ma-nơ-canh mặc trang phục phủ đầy các khuôn mặt có thể nhìn thấy bên trong, bao quanh bởi cây xanh tươi tốt."
             },
             {
-                "src": "/images/projects/tech-expo-2025/3.webp",
-                "description": "Printed Ritual Description 3"
+                "src": "/assets/printed-ritual/printed-ritual-2.png",
+                "descriptionEN": "A person standing inside the installation, which is constructed from a *wooden frame* and panels featuring *colorful, semi-transparent prints* with *fish and Japanese-style graphics*. The scene is set outdoors under a *bright blue sky*.",
+                "descriptionVI": "Một người đứng bên trong công trình lắp đặt, được xây dựng từ *khung gỗ* và các tấm có *bản in đầy màu sắc, bán trong suốt* với hình *cá và đồ họa kiểu Nhật Bản*. Khung cảnh diễn ra ngoài trời dưới *bầu trời xanh rực rỡ*."
+            },
+            {
+                "src": "/assets/printed-ritual/printed-ritual-3.png",
+                "descriptionEN": "A detailed shot of a mannequin inside the enclosure, wearing a large, textured garment made of *colorful, bunched fabric* pieces, likely representing a *'printed ritual'* or performance costume. The surrounding panels feature abstract *floral and geometric prints*.",
+                "descriptionVI": "Ảnh cận cảnh một ma-nơ-canh bên trong khu vực lắp đặt, mặc một bộ trang phục lớn, có kết cấu từ các mảnh *vải bó lại đầy màu sắc*, có lẽ đại diện cho một *'nghi thức in ấn'* hoặc trang phục biểu diễn. Các tấm xung quanh có *hoa văn hoa lá và hình học* trừu tượng."
+            },
+            {
+                "src": "/assets/printed-ritual/printed-ritual-4.png",
+                "descriptionEN": "An *aerial render* showing a cluster of five *cubical, framed enclosures* set on a gray tiled ground. Each cube features *unique, vibrant Japanese-inspired artwork* on its translucent panels, suggesting a complex modular installation.",
+                "descriptionVI": "Một *bản dựng hình từ trên cao* cho thấy một cụm năm *khối hộp, có khung* đặt trên nền gạch xám. Mỗi khối hộp đều có *tác phẩm nghệ thuật độc đáo, rực rỡ lấy cảm hứng từ Nhật Bản* trên các tấm bán trong suốt, gợi ý một công trình lắp đặt mô-đun phức tạp."
             }
         ]
     },
@@ -49,20 +76,68 @@
         "slug": "tanphong-house",
         "titleEN": "Tan Phong House",
         "titleVI": "Tan Phong House",
-        "descriptionEN": "A collection of handcrafted decorative pieces for modern spaces.",
-        "descriptionVI": "Bộ sưu tập sản phẩm trang trí thủ công cho không gian hiện đại.",
+        "descriptionEN": "**Tanphong House** is a multi-story residence characterized by a fusion of *contemporary and classic interior design*. The home uses a rich, *neutral color palette* and *warm wood accents*. Key artistic features include a large *monochrome mural of classical ruins* on the hallway wall, a *dramatic starburst wood veneer* on the staircase, and integrated *custom white shelving*. The furnishing combines *high-end modern sofas* with antique details like *crystal sconces* and *layered layered* drapes, balancing sophistication and cozy residential comfort.",
+        "descriptionVI": "**Tanphong House** là một ngôi nhà phố nổi bật bởi sự kết hợp giữa *phong cách nội thất đương đại và cổ điển*. Ngôi nhà sử dụng bảng màu phong phú gồm *tông trung tính và điểm nhấn gỗ ấm áp*, tạo ra không gian sống tinh tế. Các điểm nhấn nghệ thuật chính bao gồm *bức bích họa đơn sắc lớn về tàn tích cổ điển* trên tường hành lang, *gỗ veneer hình tia ấn tượng* trên cầu thang, và *kệ âm tường màu trắng tùy chỉnh* tích hợp. Đồ nội thất kết hợp *sofa hiện đại cao cấp* với các chi tiết cổ điển như *đèn pha lê gắn tường và rèm cửa xếp lớp dày*, cân bằng giữa sự sang trọng và thoải mái.",
         "images": [
             {
-                "src": "/images/projects/tech-expo-2025/1.webp",
-                "description": "Tan Phong House Description 1"
+                "src": "/assets/tanphong-house/tanphong-house-cover.png",
+                "descriptionEN": "An elevated view of the *Tanphong House* exterior in a dense residential area. The house features a *tiered, multi-level design* with a *dark terracotta tile roof* and *neutral-colored facade* with light railings and balconies.",
+                "descriptionVI": "Một góc nhìn từ trên cao về ngoại thất *Tanphong House* trong khu dân cư đông đúc. Ngôi nhà có *thiết kế phân tầng, nhiều cấp độ* với *mái ngói terracotta sẫm màu* và *mặt tiền màu trung tính* với lan can và ban công sáng màu."
             },
             {
-                "src": "/images/projects/tech-expo-2025/2.webp",
-                "description": "Tan Phong House Description 2"
+                "src": "/assets/tanphong-house/tanphong-house-1.png",
+                "descriptionEN": "The exterior of a multi-story urban house with a *layered, modern facade*. The design combines white stucco, *beige horizontal siding*, glass balconies, and a distinctive *yellow awning* on the top floor.",
+                "descriptionVI": "Mặt tiền một ngôi nhà phố nhiều tầng với *phong cách hiện đại, phân lớp*. Thiết kế kết hợp vữa trắng, *tấm ốp ngang màu be*, ban công kính, và một *mái hiên màu vàng* nổi bật ở tầng trên cùng."
             },
             {
-                "src": "/images/projects/tech-expo-2025/3.webp",
-                "description": "Tan Phong House Description 3"
+                "src": "/assets/tanphong-house/tanphong-house-2.png",
+                "descriptionEN": "An interior view showing a hallway next to built-in white shelving. The dominant feature is a wall covered in a *large, detailed mural* depicting *classical ruins* (likely Roman or Greek) in a monochrome, etched style.",
+                "descriptionVI": "Khung cảnh nội thất thể hiện hành lang bên cạnh kệ âm tường màu trắng. Điểm nhấn là bức tường được phủ bởi *bức bích họa lớn, chi tiết* mô tả *tàn tích cổ điển* (có lẽ là La Mã hoặc Hy Lạp) theo phong cách đơn sắc, khắc họa."
+            },
+            {
+                "src": "/assets/tanphong-house/tanphong-house-3.png",
+                "descriptionEN": "A close-up of the *classical ruin mural* on the wall, meticulously rendered in a *detailed, engraved style* with a dramatic sky. The contrast between the antique wallpaper and the *modern, minimalistic wall colors* is clear.",
+                "descriptionVI": "Ảnh cận cảnh *bức bích họa tàn tích cổ điển* trên tường, được thực hiện tỉ mỉ theo *phong cách khắc họa, chi tiết* với bầu trời ấn tượng. Sự tương phản giữa giấy dán tường cổ điển và *màu tường hiện đại, tối giản* rất rõ ràng."
+            },
+            {
+                "src": "/assets/tanphong-house/tanphong-house-4.png",
+                "descriptionEN": "A cozy living room corner featuring a *light gray fabric sofa* and a gold accent side table. A large artwork with *religious or baroque* themes hangs above, complemented by heavy *taupe curtains*.",
+                "descriptionVI": "Góc phòng khách ấm cúng với *ghế sofa vải màu xám nhạt* và bàn phụ bằng kim loại màu vàng. Một tác phẩm nghệ thuật lớn với chủ đề *tôn giáo hoặc baroque* được treo phía trên, kết hợp với *rèm cửa màu taupe* dày."
+            },
+            {
+                "src": "/assets/tanphong-house/tanphong-house-5.png",
+                "descriptionEN": "A detail shot focusing on the window treatment and lighting. The image shows neatly pleated *taupe/beige curtains* against a mustard-yellow wall, illuminated by a classic *crystal sconce* with two white shades.",
+                "descriptionVI": "Ảnh chi tiết tập trung vào rèm cửa và ánh sáng. Bức ảnh cho thấy *rèm cửa màu taupe/be* được xếp nếp gọn gàng trên nền tường vàng mù tạt, được chiếu sáng bằng *đèn pha lê gắn tường* cổ điển với hai chụp đèn trắng."
+            },
+            {
+                "src": "/assets/tanphong-house/tanphong-house-6.png",
+                "descriptionEN": "A close-up of a reading nook, featuring a round *wicker coffee table* and an armchair with a *geometric beige pattern*. The backdrop is a window covered by *sheer white curtains*, creating soft, diffused light.",
+                "descriptionVI": "Ảnh cận cảnh góc đọc sách, nổi bật với *bàn cà phê mây tròn* và ghế bành có *hoa văn hình học màu be*. Phông nền là cửa sổ được che bằng *rèm trắng mỏng*, tạo ra ánh sáng khuếch tán, dịu nhẹ."
+            },
+            {
+                "src": "/assets/tanphong-house/tanphong-house-7.png",
+                "descriptionEN": "A wide view of the living room featuring a *light gray fabric sofa* and a *dark leather Barcelona-style chair*. The room is brightened by natural light filtering through *sheer and taupe layered curtains*, set against a *herringbone wood floor*.",
+                "descriptionVI": "Một góc nhìn rộng phòng khách với *sofa vải màu xám nhạt* và *ghế da màu tối kiểu Barcelona*. Phòng được chiếu sáng bởi ánh sáng tự nhiên qua *rèm hai lớp mỏng và màu taupe*, đặt trên *sàn gỗ xương cá*."
+            },
+            {
+                "src": "/assets/tanphong-house/tanphong-house-8.png",
+                "descriptionEN": "An outdoor patio area featuring a *white dining table* paired with *rattan-backed chairs*. The area is defined by a low wall with *dark stone cladding* and tall *cypress trees* in planters, creating a secluded, shaded space.",
+                "descriptionVI": "Khu vực sân thượng ngoài trời với *bàn ăn màu trắng* kết hợp *ghế dựa mây*. Khu vực này được xác định bởi bức tường thấp ốp *đá màu tối* và *cây bách* cao trong chậu, tạo ra một không gian kín đáo, có bóng râm."
+            },
+            {
+                "src": "/assets/tanphong-house/tanphong-house-9.png",
+                "descriptionEN": "A close-up of a staircase featuring a striking wall treatment: *dark wood veneer* applied in a *radial, starburst pattern*. The stairs have *dark granite treads* and white risers, complemented by a *curved dark wood handrail*.",
+                "descriptionVI": "Ảnh cận cảnh cầu thang nổi bật với vật liệu ốp tường ấn tượng: *gỗ veneer tối màu* được dán theo *hoa văn hình tia, bung tỏa*. Cầu thang có *mặt bậc đá granite tối màu* và cổ bậc trắng, đi kèm *tay vịn gỗ cong* màu tối."
+            },
+            {
+                "src": "/assets/tanphong-house/tanphong-house-10.png",
+                "descriptionEN": "A large, *integrated white shelving unit* filled with books, awards, and decorative objects. The unit is recessed and features *integrated lighting*, contrasting with the adjacent hallway wall covered in the *monochrome classical ruin mural*.",
+                "descriptionVI": "Một *kệ âm tường lớn màu trắng* được tích hợp, chứa đầy sách, giải thưởng và đồ vật trang trí. Kệ có *hệ thống đèn tích hợp*, tương phản với bức tường hành lang liền kề được phủ *bức bích họa tàn tích cổ điển đơn sắc*."
+            },
+            {
+                "src": "/assets/tanphong-house/tanphong-house-11.png",
+                "descriptionEN": "A view into a room showing a *dark wood sofa* with patterned cushions and a matching *glass-top coffee table*. Natural light enters from a window covered by *heavy taupe drapes* and sheer curtains next to a *built-in illuminated shelving unit*.",
+                "descriptionVI": "Khung cảnh nhìn vào một căn phòng với *sofa gỗ tối màu* có đệm họa tiết và *bàn cà phê mặt kính* phù hợp. Ánh sáng tự nhiên từ cửa sổ được che bằng *rèm taupe dày* và rèm mỏng bên cạnh *kệ âm tường có đèn chiếu sáng tích hợp*."
             }
         ]
     }
