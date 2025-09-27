@@ -1,44 +1,13 @@
 import { Project } from "@/interface";
 import projects from "@/content/projects.json";
-import Image from "next/image";
+import Carousel3D from "@/components/site/imageCarousel";
 
 interface Params { params: Promise<{ locale: string; slug: string }> };
 
 export const dynamic = "error";
 
 export async function generateStaticParams() {
-    const locales = ["en", "vi"] as const;
-    return locales.flatMap((locale) =>
-        (projects as Project[]).map((p) => ({ locale, slug: p.slug }))
-    );
 }
 
 export default async function ProjectPage({ params }: Params) {
-    const { locale, slug } = await params;
-    const project = (projects as Project[]).find((p) => p.slug === slug);
-    if (!project) return null;
-    const title = locale === "en" ? project.titleEN : project.titleVI;
-    const desc =
-        locale === "en" ? project.descriptionEN : project.descriptionVI;
-    return (
-        <div className="px-6 py-10">
-            <h1 className="text-3xl font-semibold animate-in fade-in duration-300">{title}</h1>
-            <p className="mt-3 text-muted-foreground max-w-3xl animate-in fade-in slide-in-from-bottom-2 duration-500">{desc}</p>
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {project.images.map((src: string, idx: number) => (
-                    <div key={idx} className="relative aspect-[4/3] overflow-hidden rounded-md animate-in fade-in zoom-in-95 duration-300">
-                        <Image
-                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop"
-                            alt={title}
-                            fill
-                            className="object-cover transition-transform duration-300 hover:scale-105"
-                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        />
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
 }
-
-

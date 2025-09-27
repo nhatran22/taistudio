@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Header } from "@/components/site/Header";
 import type { Metadata } from "next";
+import { Footer } from "@/components/site/Footer";
 
 interface LayoutProps {
     children: ReactNode;
@@ -25,6 +26,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
             <main lang={lang} suppressHydrationWarning>
                 {children}
             </main>
+            <Footer />
         </>
     );
 }

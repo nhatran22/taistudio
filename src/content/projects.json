@@ -1,40 +1,69 @@
 [
     {
-        "slug": "luxury-villa",
-        "categorySlug": "interior",
-        "titleEN": "Luxury Villa",
-        "titleVI": "Biệt thự cao cấp",
+        "slug": "lavazza-coffee",
+        "titleEN": "Lavazza Coffee",
+        "titleVI": "Lavazza Coffee",
         "descriptionEN": "A premium villa interior focusing on natural light and tactile materials.",
         "descriptionVI": "Không gian nội thất biệt thự cao cấp, nhấn mạnh ánh sáng tự nhiên và vật liệu chạm tay.",
         "images": [
-            "/images/projects/luxury-villa/1.webp",
-            "/images/projects/luxury-villa/2.webp",
-            "/images/projects/luxury-villa/3.webp"
+            {
+                "src": "/images/projects/tech-expo-2025/1.webp",
+                "description": "Lavazza Coffee Description 1"
+            },
+            {
+                "src": "/images/projects/tech-expo-2025/2.webp",
+                "description": "Lavazza Coffee Description 2"
+            },
+            {
+                "src": "/images/projects/tech-expo-2025/3.webp",
+                "description": "Lavazza Coffee Description 3"
+            },
+            {
+                "src": "/images/projects/tech-expo-2025/3.webp",
+                "description": "Lavazza Coffee Description 4"
+            }
         ]
     },
     {
-        "slug": "tech-expo-2025",
-        "categorySlug": "exhibition",
-        "titleEN": "Tech Expo 2025",
-        "titleVI": "Triển lãm Công nghệ 2025",
+        "slug": "printed-ritual",
+        "titleEN": "Printed Ritual",
+        "titleVI": "Printed Ritual",
         "descriptionEN": "Immersive exhibition design showcasing cutting-edge innovations.",
         "descriptionVI": "Thiết kế triển lãm nhập vai, giới thiệu các đổi mới công nghệ tiên tiến.",
         "images": [
-            "/images/projects/tech-expo-2025/1.webp",
-            "/images/projects/tech-expo-2025/2.webp",
-            "/images/projects/tech-expo-2025/3.webp"
+            {
+                "src": "/images/projects/tech-expo-2025/1.webp",
+                "description": "Printed Ritual Description 1"
+            },
+            {
+                "src": "/images/projects/tech-expo-2025/2.webp",
+                "description": "Printed Ritual Description 2"
+            },
+            {
+                "src": "/images/projects/tech-expo-2025/3.webp",
+                "description": "Printed Ritual Description 3"
+            }
         ]
     },
     {
-        "slug": "artisan-decor-series",
-        "categorySlug": "decoration",
-        "titleEN": "Artisan Decor Series",
-        "titleVI": "Bộ sưu tập trang trí thủ công",
+        "slug": "tanphong-house",
+        "titleEN": "Tan Phong House",
+        "titleVI": "Tan Phong House",
         "descriptionEN": "A collection of handcrafted decorative pieces for modern spaces.",
         "descriptionVI": "Bộ sưu tập sản phẩm trang trí thủ công cho không gian hiện đại.",
         "images": [
-            "/images/projects/artisan-decor-series/1.webp",
-            "/images/projects/artisan-decor-series/2.webp"
+            {
+                "src": "/images/projects/tech-expo-2025/1.webp",
+                "description": "Tan Phong House Description 1"
+            },
+            {
+                "src": "/images/projects/tech-expo-2025/2.webp",
+                "description": "Tan Phong House Description 2"
+            },
+            {
+                "src": "/images/projects/tech-expo-2025/3.webp",
+                "description": "Tan Phong House Description 3"
+            }
         ]
     }
 ]

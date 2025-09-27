@@ -3,12 +3,9 @@
     "slogan": "Building sustainable spaces",
     "subtitle": "Crafting architecture, interiors, exhibitions and decorations with a human-centric approach.",
     "categories": {
-        "interior": "Interior",
-        "exhibition": "Exhibition",
-        "decoration": "Decoration",
-        "urban": "Urban & Landscape",
-        "engineering": "Engineering",
-        "landscape": "Landscape"
+        "lavazza-coffee": "Lavazza Coffee",
+        "printed-ritual": "Printed Ritual",
+        "tanphong-house": "Tan Phong House"
     },
     "footer": {
         "copyright": "All rights reserved."

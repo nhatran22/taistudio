@@ -32,7 +32,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }))
     );
 
-    return [...staticPages, ...categoryPages, ...projectPages];
+    const aboutMePages = locales.flatMap((locale) => ({
+        url: `${BASE_URL}/${locale}/about`,
+        lastModified: new Date(),
+        alternates: {
+            languages: {
+                en: `${BASE_URL}/en`,
+                vi: `${BASE_URL}/vi`,
+            },
+        },
+    }))
+
+    return [...staticPages, ...categoryPages, ...projectPages, ...aboutMePages];
 }
 
 

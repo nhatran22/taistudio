@@ -7,12 +7,25 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react"; // Importing icons for search and menu
 
 const categories = [
-    "interior",
-    "exhibition",
-    "decoration",
-    "urban",
-    "engineering",
-    "landscape",
+    {
+        slug: "about",
+        displayNameVI: "About Me",
+        displayNameEN: "Về Chúng Tôi"
+    },
+    {
+        slug: "category/lavazza-coffee",
+        displayNameVI: "Lavazza Coffee",
+        displayNameEN: "Lavazza Coffee"
+    },
+    {
+        slug: "category/printed-ritual",
+        displayNameVI: "Printed Ritual",
+        displayNameEN: "Printed Ritual"
+    }, {
+        slug: "category/tanphong-house",
+        displayNameVI: "Tan Phong House",
+        displayNameEN: "Tan Phong House"
+    }
 ];
 
 // Define a type for the locales
@@ -129,19 +142,16 @@ export function Header() {
                             </SheetHeader>
                             <nav className="grid gap-2">
                                 {/* ... links */}
-                                {categories.map((slug) => (
-                                    <SheetClose asChild key={slug}>
+                                {categories.map((cat) => (
+                                    <SheetClose asChild key={cat.slug}>
                                         <Link
                                             href={
                                                 "/" +
-                                                currentLocale +
-                                                (withLocale(currentLocale) === "/"
-                                                    ? "category/" + slug
-                                                    : `/category/${slug}`)
+                                                currentLocale + "/" + cat.slug
                                             }
                                             className="px-2 py-2 rounded hover:bg-muted transition-colors capitalize"
                                         >
-                                            {slug}
+                                            {currentLocale === "en" ? cat.displayNameVI : cat.displayNameEN}
                                         </Link>
                                     </SheetClose>
                                 ))}

@@ -7,10 +7,14 @@ export interface Category {
 
 export interface Project {
     slug: string,
-    categorySlug: string,
     titleEN: string,
     titleVI: string,
     descriptionEN: string,
     descriptionVI: string,
-    images: Array<string>
+    images: Array<Images>
+}
+
+export interface Images {
+    src: string,
+    description: string
 }
