@@ -70,7 +70,7 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                 <Link
                                     key={cat.slug}
                                     href={`/${locale}/category/${cat.slug}`}
-                                    className={`w-full group overflow-hidden hover:shadow-md hover:border hover:rounded-lg transition-shadow animate-in fade-in zoom-in-95 duration-1000 ${isLastOdd ? "md:col-span-2" : ""
+                                    className={`w-full group overflow-hidden hover:shadow-md hover:border hover:rounded-lg transition-shadow animate-in fade-in zoom-in-95 duration-1000 ${isLastOdd ? "md:col-span-2 md:justify-self-center md:w-1/2" : ""
                                         }`}
                                 >
                                     <div className="relative w-full h-[25vh] md:h-[50vh]">
@@ -78,7 +78,7 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                             src={cat.cover}
                                             alt={dict.categories[cat.slug as keyof typeof dict.categories]}
                                             fill
-                                            className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-500"
+                                            className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                                         <div className="absolute bottom-0 left-0 p-6 text-white z-10">
