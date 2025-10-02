@@ -45,7 +45,7 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                     className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                                <div className="absolute bottom-0 left-0 p-6 text-white z-10">
+                                <div className="absolute w-full bottom-0 left-0 p-6 text-white z-10 bg-gradient-to-b from-black/80 to-transparent">
                                     <p className="text-2xl md:text-2xl font-semibold drop-shadow-lg">
                                         {currentLocale === 'vi' ? 'Về Chúng Tôi' : 'About Us'}
                                     </p>
@@ -75,13 +75,13 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                 >
                                     <div className="relative w-full h-[25vh] md:h-[50vh]">
                                         <Image
-                                            src={cat.cover}
                                             alt={dict.categories[cat.slug as keyof typeof dict.categories]}
+                                            src={cat.cover}
                                             fill
                                             className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                                        <div className="absolute bottom-0 left-0 p-6 text-white z-10">
+                                        <div className="absolute w-full bottom-0 left-0 p-6 text-white z-10 bg-gradient-to-b from-black/80 to-transparent">
                                             <span className="text-2xl md:text-2xl font-semibold drop-shadow-lg">
                                                 {dict.categories[cat.slug as keyof typeof dict.categories]}
                                             </span>

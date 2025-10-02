@@ -3,18 +3,24 @@
         "slug": "tanphong-house",
         "titleEN": "Tan Phong House",
         "titleVI": "Tan Phong House",
-        "cover": "/assets/test/16_9.png"
-    },
-    {
-        "slug": "lavazza-coffee",
-        "titleEN": "Lavazza Coffee",
-        "titleVI": "Lavazza Coffee",
-        "cover": "/assets/test/16_9.png"
+        "cover": "/assets/tanphong-house/tanphong-house-1.png"
     },
     {
         "slug": "printed-ritual",
         "titleEN": "Printed Ritual",
         "titleVI": "Printed Ritual",
-        "cover": "/assets/test/16_9.png"
+        "cover": "/assets/printed-ritual/printed-ritual-1.png"
+    },
+    {
+        "slug": "lavazza-coffee",
+        "titleEN": "Lavazza Coffee",
+        "titleVI": "Lavazza Coffee",
+        "cover": "/assets/lavazza-coffee/lavazza-coffee-1.png"
+    },
+    {
+        "slug": "seed",
+        "titleEN": "Seed Library",
+        "titleVI": "Seed Library",
+        "cover": "/assets/seed/seed-1.png"
     }
 ]

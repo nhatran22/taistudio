@@ -13,18 +13,25 @@ const categories = [
         displayNameEN: "Về Chúng Tôi"
     },
     {
-        slug: "category/lavazza-coffee",
-        displayNameVI: "Lavazza Coffee",
-        displayNameEN: "Lavazza Coffee"
+        slug: "category/tanphong-house",
+        displayNameVI: "Tan Phong House",
+        displayNameEN: "Tan Phong House"
     },
     {
         slug: "category/printed-ritual",
         displayNameVI: "Printed Ritual",
         displayNameEN: "Printed Ritual"
-    }, {
-        slug: "category/tanphong-house",
-        displayNameVI: "Tan Phong House",
-        displayNameEN: "Tan Phong House"
+    },
+    {
+        slug: "category/lavazza-coffee",
+        displayNameVI: "Lavazza Coffee",
+        displayNameEN: "Lavazza Coffee"
+    },
+
+    {
+        slug: "category/seed",
+        displayNameVI: "Seed Library",
+        displayNameEN: "Seed Library"
     }
 ];
 

@@ -59,13 +59,13 @@ export default function Carousel3D({ images, title, lang }: { images: Array<Imag
                     // Tăng chiều rộng/cao slide để tận dụng không gian
                     <SwiperSlide
                         key={idx}
-                        className="w-[700px] h-[450px] flex items-center justify-center"
+                        className="w-[800px] md:h-[600px] flex items-center justify-center"
                     >
                         <Image
                             src={img.src}
                             alt={`${title} ${idx}`}
                             fill
-                            className="object-contain md:object-cover shadow-xl rounded-none" // Bỏ rounded-xl, dùng shadow-xl tinh tế hơn
+                            className="object-contain shadow-xl rounded-none"
                         />
                     </SwiperSlide>
                 ))}
