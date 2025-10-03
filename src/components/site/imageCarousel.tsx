@@ -72,8 +72,7 @@ export default function Carousel3D({ images, title, lang }: { images: Array<Imag
             </Swiper>
 
             <div className="mt-8 mx-auto w-full px-4 md:px-0">
-                <p className="text-gray-700 text-base md:text-lg text-center">
-                    {/* Dùng hàm đã import */}
+                <p className="text-gray-700 text-xs md:text-xs text-center">
                     {parseDescription(activeImageDesc)}
                 </p>
             </div>

@@ -19,9 +19,11 @@ export async function generateStaticParams() {
 
 export default async function Landing({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
+
     const currentLocale = SUPPORTED_LOCALES.includes(locale as "en" | "vi")
         ? locale
         : "vi";
+
     const dict = await getDictionary(currentLocale);
     return (
         <div className="min-h-dvh flex flex-col">
@@ -45,7 +47,7 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                     className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                                <div className="absolute w-full bottom-0 left-0 p-6 text-white z-10 bg-gradient-to-b from-black/80 to-transparent">
+                                <div className="absolute w-full bottom-0 left-0 p-2 text-white z-10 bg-gradient-to-b from-black/80 to-transparent">
                                     <p className="text-2xl md:text-2xl font-semibold drop-shadow-lg">
                                         {currentLocale === 'vi' ? 'Về Chúng Tôi' : 'About Us'}
                                     </p>
@@ -65,6 +67,7 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8 bg-black">
                         {categories.map((cat, idx) => {
                             const isLastOdd = categories.length % 2 === 1 && idx === categories.length - 1;
+                            const category = dict.categories.find(category => category.slug === cat.slug);
 
                             return (
                                 <Link
@@ -75,16 +78,19 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                 >
                                     <div className="relative w-full h-[25vh] md:h-[50vh]">
                                         <Image
-                                            alt={dict.categories[cat.slug as keyof typeof dict.categories]}
+                                            alt={category!.label!}
                                             src={cat.cover}
                                             fill
                                             className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                                        <div className="absolute w-full bottom-0 left-0 p-6 text-white z-10 bg-gradient-to-b from-black/80 to-transparent">
-                                            <span className="text-2xl md:text-2xl font-semibold drop-shadow-lg">
-                                                {dict.categories[cat.slug as keyof typeof dict.categories]}
-                                            </span>
+                                        <div className="absolute w-full bottom-0 left-0 p-1 md:p-2 text-white z-10 bg-gradient-to-b from-black/80 to-transparent">
+                                            <p className="text-[16px] md:text-2xl font-semibold drop-shadow-lg">
+                                                {category?.label}
+                                            </p>
+                                            <p className="text-[12px] md:text-[14px] text-gray-500 font-light">
+                                                {category!.year}
+                                            </p>
                                         </div>
                                     </div>
                                 </Link>

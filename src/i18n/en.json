@@ -2,12 +2,28 @@
     "brand": "Studio",
     "slogan": "Building sustainable spaces",
     "subtitle": "Crafting architecture, interiors, exhibitions and decorations with a human-centric approach.",
-    "categories": {
-        "lavazza-coffee": "Lavazza Coffee",
-        "printed-ritual": "Printed Ritual",
-        "tanphong-house": "Tan Phong House",
-        "seed": "Seed Library"
-    },
+    "categories": [
+        {
+            "slug": "tanphong-house",
+            "label": "Tan Phong House",
+            "year": "2025"
+        },
+        {
+            "slug": "printed-ritual",
+            "label": "Printed Ritual",
+            "year": "2024"
+        },
+        {
+            "slug": "lavazza-coffee",
+            "label": "Lavazza Coffee",
+            "year": "2023"
+        },
+        {
+            "slug": "seed",
+            "label": "Seed Library",
+            "year": "2022"
+        }
+    ],
     "footer": {
         "copyright": "All rights reserved."
     }
