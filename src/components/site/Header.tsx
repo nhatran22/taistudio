@@ -30,8 +30,8 @@ const categories = [
 
     {
         slug: "category/seed",
-        displayNameVI: "Seed Library",
-        displayNameEN: "Seed Library"
+        displayNameVI: "Seed",
+        displayNameEN: "Seed"
     }
 ];
 
