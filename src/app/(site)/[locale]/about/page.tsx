@@ -1,4 +1,3 @@
-import { Project } from "@/interface";
 import { PageProps } from "@/interface";
 import projects from "@/content/projects.json";
 import AboutSection from "@/components/site/aboutSection";
@@ -35,7 +34,7 @@ const aboutContent = {
 export async function generateStaticParams() {
     const locales = ["en", "vi"] as const;
     return locales.flatMap((locale) =>
-        (projects as Project[]).map((p) => ({ locale, slug: p.slug }))
+        (projects).map((p) => ({ locale, slug: p.slug }))
     );
 }
 

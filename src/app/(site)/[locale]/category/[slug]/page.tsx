@@ -1,4 +1,3 @@
-import { Project } from "@/interface";
 import projects from "@/content/projects.json";
 import Carousel3D from "@/components/site/imageCarousel";
 
