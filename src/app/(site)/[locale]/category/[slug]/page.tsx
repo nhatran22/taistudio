@@ -11,13 +11,13 @@ export const dynamic = "error";
 export async function generateStaticParams() {
     const locales = ["en", "vi"] as const;
     return locales.flatMap((locale) =>
-        (projects as Project[]).map((c) => ({ locale, slug: c.slug }))
+        (projects).map((c) => ({ locale, slug: c.slug }))
     );
 }
 
 export default async function CategoryPage({ params }: PageProps) {
     const { locale, slug } = await params;
-    const project = (projects as Project[]).find((p) => p.slug === slug);
+    const project = (projects).find((p) => p.slug === slug);
     if (!project) return null;
 
     const title = locale === "en" ? project.titleEN : project.titleVI;
@@ -46,6 +46,14 @@ export default async function CategoryPage({ params }: PageProps) {
                 <h1 className="text-3xl md:text-6xl text-gray-900 font-bold w-full">
                     {title}
                 </h1>
+                <div className="flex justify-between pt-2 text-gray-500 font-light">
+                    <span><span className="font-bold">COMPLETED: </span>{project.comletedYear}</span>
+                    <span><span className="font-bold">DESIGNER: </span>{locale === "en" ? project.designerEN : project.designerVI}</span>
+                    <span><span className="font-bold">CLIENT: </span>{locale === "en" ? project.clientEN : project.clientVI}</span>
+                    {project.prize && (
+                        <span><span className="font-bold">AWARD: </span>{project.prize}</span>
+                    )}
+                </div>
                 <p className="mt-6 text-gray-700 w-full text-xm md:text-base">
                     {parseDescription(desc)}
                 </p>

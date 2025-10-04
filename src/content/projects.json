@@ -1,172 +1,193 @@
 [
     {
         "slug": "lavazza-coffee",
+        "comletedYear": "2023",
         "titleEN": "Lavazza Coffee",
         "titleVI": "Lavazza Coffee",
-        "descriptionEN": "This is *Lavazza's* \"*PERFÙRIA*\" conceptual project by *NGO DINH TAI*. The installation encourages customers to **smell the coffee aroma** like perfume, emphasizing notes like *FLORAL and WOODY*. The design features a modern, *brutalist-inspired cafe interior* with *concrete tables* and unique *bent light wood chairs*, blending high design with the innovative coffee scent ritual.",
-        "descriptionVI": "Đây là dự án ý tưởng \"*PERFÙRIA*\" của *NGO DINH TAI* dành cho **Lavazza**. Công trình khuyến khích khách hàng *ngửi hương thơm cà phê* như nước hoa, tập trung vào các nốt hương *HOA và GỖ*. Thiết kế nổi bật với *nội thất quán cà phê phong cách brutalist*, sử dụng *bàn bê tông* và *ghế gỗ uốn cong* độc đáo, kết hợp thiết kế hiện đại với nghi thức hương thơm cà phê sáng tạo.",
+        "designerVI": "Ngô Đình Tài",
+        "designerEN": "Ngo Dinh Tai",
+        "clientEN": "Lavazza & International Coffee Organization (ICO)",
+        "clientVI": "Lavazza & International Coffee Organization (ICO)",
+        "descriptionEN": "On the occasion of the 60th anniversary of its establishment, the world coffee organization and the coffee brand Lavazza organized the exhibition “the New Ritual” to introduce new visions of how people enjoy coffee in the future. “Perfuria” is one of the themes chosen to be displayed in the Lavazza museum in Turin, Italy.",
+        "descriptionVI": "Nhân dịp kỉ niệm 60 năm hình thành, tổ chức cà phê thế giới và thương hiệu cà phê Lavazza đã tổ chức triển lãm “the New Ritual” nhằm giới thiệu những tầm nhìn mới về cách con người thưởng thức cà phê trong tương lai. “Perfuria” là một trong các chủ đề được lựa chọn trưng bày trong bảo tàng Lavazza tại Turin, Ý. ",
         "images": [
             {
                 "src": "/assets/lavazza-coffee/lavazza-coffee-1.png",
-                "descriptionEN": "Exhibition display for the *\"PERFÙRIA\"* project by *NGO DINH TAI*, highlighting *FLORAL, WOODY, FRESH, and ORIENTAL* fragrance notes.",
-                "descriptionVI": "Khu trưng bày triển lãm dự án *\"PERFÙRIA\"* của *NGO DINH TAI*, làm nổi bật các nốt hương *HOA, GỖ, TƯƠI MÁT và PHƯƠNG ĐÔNG*."
+                "descriptionEN": "Perfuria exhibition booth in the central hall of the Lavazza museum, Italy.",
+                "descriptionVI": "Quầy triển lãm Perfuria trong sảnh trung tâm của bảo tàng Lavazza, Ý."
             },
             {
                 "src": "/assets/lavazza-coffee/lavazza-coffee-2.png",
-                "descriptionEN": "A modern outdoor cafe seating area featuring minimalist square *concrete tables* and distinctive *bent light wood chairs*.",
-                "descriptionVI": "Khu vực chỗ ngồi ngoài trời hiện đại với những chiếc *bàn bê tông* vuông tối giản và *ghế gỗ sáng màu uốn cong* độc đáo."
+                "descriptionEN": "Perfuria cafe concept, where people can create their own coffee recipe by mixing different coffee beans with different aromas.",
+                "descriptionVI": "Concept quán cà phê Perfuria, nơi mọi người có thể tự tạo ra công thức cà phê của riêng mình bằng việc trộn các hạt cà phê khác nhau với các nốt hương khác nhau. "
             },
             {
                 "src": "/assets/lavazza-coffee/lavazza-coffee-3.png",
-                "descriptionEN": "A rendered interior of the *\"PERFUMIA\"* cafe concept with a tiered, curved layout. It features a consistent *concrete material palette* and the signature bent wood chairs.",
-                "descriptionVI": "Không gian nội thất mô phỏng quán cà phê *\"PERFUMIA\"* với bố cục cong, phân tầng. Thiết kế sử dụng tông *vật liệu bê tông* đồng nhất và ghế gỗ uốn cong đặc trưng."
+                "descriptionEN": "With a large shelf system containing coffee beans from all over the world, customers can experience a “coffee buffet” where no recipe is the same.",
+                "descriptionVI": "Với hệ thống kệ lớn chứa đựng các hạt cà phê từ khắp nơi trên thế giới, khách hàng có thể trải nghiệm một bữa tiệc “buffet cà phê” nơi mà không có một công thức nào trùng lặp với nhau."
             },
             {
                 "src": "/assets/lavazza-coffee/lavazza-coffee-4.png",
-                "descriptionEN": "An informational panel detailing the *\"PERFÙRIA\"* project, proposing a new ritual for coffee lovers to *smell the aroma* like perfume.",
-                "descriptionVI": "Tấm bảng thông tin chi tiết về dự án *\"PERFÙRIA\"*, đề xuất nghi thức mới cho người yêu cà phê để *ngửi hương thơm* giống như nước hoa."
+                "descriptionEN": "The chairs are specially designed with materials made from coffee grounds, helping to reduce waste to the environment, enhancing the sustainability factor for the brand.",
+                "descriptionVI": "Những chiếc ghế được thiết kế đặc biệt với chất liệu làm từ bã cà phê, giúp giảm thiểu lượng rác thải ra môi trường, tăng cường yếu tố bền vững cho thương hiệu."
             },
             {
                 "src": "/assets/lavazza-coffee/lavazza-coffee-5.png",
-                "descriptionEN": "Close-up of the *\"PERFÙRIA\"* display stand by *NGO DINH TAI*, showing two translucent *vessel prototypes* on the white pedestal.",
-                "descriptionVI": "Cận cảnh quầy trưng bày *\"PERFÙRIA\"* của *NGO DINH TAI*, thể hiện hai *mẫu vật chứa* mờ trên bệ trắng."
+                "descriptionEN": "Each coffee bean has its own flavor, but is classified into four main notes: floral, fruity, woody and oriental, so there are four types of cups designed for the corresponding notes.",
+                "descriptionVI": "Mỗi hạt cà phê đều có một hương vị riêng, nhưng xếp vào bốn note hương chính là hoa, trái cây, gỗ và phương Đông, vì vậy có bốn loại li được thiết kế cho các note hương tương ứng."
             },
             {
                 "src": "/assets/lavazza-coffee/lavazza-coffee-6.png",
-                "descriptionEN": "A geometric still-life composition of various clear and opaque *drinking vessels/glasses* with faceted designs, arranged on a tiered platform made of rough *gray concrete*.",
-                "descriptionVI": "Bố cục tĩnh vật hình học của nhiều loại *bình/ly uống* (trong suốt và đục) với các thiết kế cắt mặt, được sắp xếp trên một bệ đỡ bậc thang làm bằng *bê tông xám* thô."
+                "descriptionEN": "Close-up of the exhibition booth, the theme logo is designed with its own alphabet.",
+                "descriptionVI": "Cận cảnh quầy triển lãm, logo của chủ đề được thiết kế với bảng chữ cái riêng."
             },
             {
                 "src": "/assets/lavazza-coffee/lavazza-coffee-7.png",
-                "descriptionEN": "A geometric still-life composition of various clear and opaque *drinking vessels/glasses* with faceted designs, arranged on a tiered platform made of rough *gray concrete*.",
-                "descriptionVI": "Bố cục tĩnh vật hình học của nhiều loại *bình/ly uống* (trong suốt và đục) với các thiết kế cắt mặt, được sắp xếp trên một bệ đỡ bậc thang làm bằng *bê tông xám* thô."
+                "descriptionEN": "The four-note symbol is designed with inspiration from organic lines combined with architectural shapes to create a unique design.",
+                "descriptionVI": "Biểu tượng bốn note hương được thiết kế lấy cảm hứng từ các đường nét organic kết hợp các hình khối kiến trúc tạo nên một thiết kế riêng biệt."
             }
         ]
     },
     {
         "slug": "printed-ritual",
+        "comletedYear": "2024",
         "titleEN": "Printed Ritual",
         "titleVI": "Printed Ritual",
-        "descriptionEN": "This project is a modular art installation, defined by its use of *vibrant color* and *Japanese-inspired printed graphics* (possibly ukiyo-e or manga). Constructed from *light wooden frames* and *semi-transparent printed panels*, the work creates an *immersive, maze-like environment* outdoors, often featuring a *performance element* such as the textile-covered mannequins seen inside.",
-        "descriptionVI": "Dự án này là một công trình sắp đặt nghệ thuật mô-đun, được xác định bởi việc sử dụng *màu sắc rực rỡ* và *đồ họa in ấn lấy cảm hứng từ Nhật Bản* (có thể là ukiyo-e hoặc manga). Được xây dựng từ *khung gỗ nhẹ* và *các tấm in bán trong suốt*, tác phẩm tạo ra một *môi trường sống động, giống như mê cung* ngoài trời, thường bao gồm *yếu tố trình diễn* như ma-nơ-canh bọc vải được nhìn thấy bên trong.",
+        "designerVI": "Ngô Đình Tài & GuardiniCiuffreda Studio",
+        "designerEN": "Ngo Dinh Tai & GuardiniCiuffreda Studio",
+        "clientEN": "D-House & Kornit Digital",
+        "clientVI": "D-House & Kornit Digital",
+        "descriptionEN": "As part of Milano Design Week, with a theme inspired by Japanese culture and the art of arrangement, the project is a combination of art and technology, tradition and modernity, architecture and fashion, bringing an interesting experience to visitors.",
+        "descriptionVI": "Nằm trong khuôn khổ Milano Design Week, với chủ đề được lấy cảm hứng từ văn hoá Nhật Bản và nghệ thuật sắp xếp, dự án là sự kết hợp giữa nghệ thuật và công nghệ, truyền thống và hiện đại, kiến trúc và thời trang đem đến một trải nghiệm thú vị cho người tham quan.",
         "images": [
             {
                 "src": "/assets/printed-ritual/printed-ritual-1.png",
-                "descriptionEN": "A wide exterior view of the modular art installation under a *clear blue sky*. The structure consists of multiple *wooden-framed cubes* and walls covered in *bold, colorful prints* and patterns, creating an *immersive, maze-like environment*.",
-                "descriptionVI": "Một góc nhìn ngoại thất rộng của công trình nghệ thuật mô-đun dưới *bầu trời xanh quang đãng*. Cấu trúc bao gồm nhiều *khối hộp khung gỗ* và các bức tường được bao phủ bởi *các bản in và hoa văn đậm nét, đầy màu sắc*, tạo ra một *môi trường sống động, giống như mê cung*."
+                "descriptionEN": "Five asymmetrical blocks represent the concept of Five Blessings in East Asian culture, each block is built to cover a stylized and fashionable “element”.",
+                "descriptionVI": "Năm khối kiến trúc bất đối xứng tượng trưng cho khái niệm Ngũ Phúc trong văn hoá Á Đông, mỗi khối được dựng lên để bao bọc lấy một “nhân tố” được cách điệu và thể hiện bằng thời trang."
             },
             {
                 "src": "/assets/printed-ritual/printed-ritual-2.png",
-                "descriptionEN": "A view through the *vibrant pink and blue entrance* of the wooden framed installation, featuring dense *Japanese characters* and graphics. A mannequin wearing a garment covered in faces is visible inside, surrounded by lush greenery.",
-                "descriptionVI": "Khung cảnh nhìn xuyên qua *lối vào màu hồng và xanh lam rực rỡ* của công trình khung gỗ, nổi bật với các *chữ cái và đồ họa tiếng Nhật* dày đặc. Một ma-nơ-canh mặc trang phục phủ đầy các khuôn mặt có thể nhìn thấy bên trong, bao quanh bởi cây xanh tươi tốt."
+                "descriptionEN": "Each block is covered on the outside with a different pattern in Japanese culture expressed by designer Luigi Ciufreda.",
+                "descriptionVI": "Mỗi một khối kiến trúc được bao bọc ở ngoài bằng một hoa văn khác nhau trong văn hoá Nhật được thể hiện bởi nhà thiết kế Luigi Ciufreda."
             },
             {
                 "src": "/assets/printed-ritual/printed-ritual-3.png",
-                "descriptionEN": "A person standing inside the installation, which is constructed from a *wooden frame* and panels featuring *colorful, semi-transparent prints* with *fish and Japanese-style graphics*. The scene is set outdoors under a *bright blue sky*.",
-                "descriptionVI": "Một người đứng bên trong công trình lắp đặt, được xây dựng từ *khung gỗ* và các tấm có *bản in đầy màu sắc, bán trong suốt* với hình *cá và đồ họa kiểu Nhật Bản*. Khung cảnh diễn ra ngoài trời dưới *bầu trời xanh rực rỡ*."
+                "descriptionEN": "The “elements” inside are expressed through the eyes of sustainable fashion designer Tiziano Guardini.",
+                "descriptionVI": "Các “nhân tố” bên trong được thể hiện qua con mắt của nhà thiết kế thời trang bền vững Tiziano Guardini. "
             },
             {
                 "src": "/assets/printed-ritual/printed-ritual-4.png",
-                "descriptionEN": "A detailed shot of a mannequin inside the enclosure, wearing a large, textured garment made of *colorful, bunched fabric* pieces, likely representing a *'printed ritual'* or performance costume. The surrounding panels feature abstract *floral and geometric prints*.",
-                "descriptionVI": "Ảnh cận cảnh một ma-nơ-canh bên trong khu vực lắp đặt, mặc một bộ trang phục lớn, có kết cấu từ các mảnh *vải bó lại đầy màu sắc*, có lẽ đại diện cho một *'nghi thức in ấn'* hoặc trang phục biểu diễn. Các tấm xung quanh có *hoa văn hoa lá và hình học* trừu tượng."
+                "descriptionEN": "The blocks are built with respect for nature, creating a harmony between the natural and the artificial.",
+                "descriptionVI": "Những hình khối được dựng nên với sự tôn trọng thiên nhiên tạo nên sự hoà hợp giữa tự nhiên và nhân tạo. "
             },
             {
                 "src": "/assets/printed-ritual/printed-ritual-5.png",
-                "descriptionEN": "An *aerial render* showing a cluster of five *cubical, framed enclosures* set on a gray tiled ground. Each cube features *unique, vibrant Japanese-inspired artwork* on its translucent panels, suggesting a complex modular installation.",
-                "descriptionVI": "Một *bản dựng hình từ trên cao* cho thấy một cụm năm *khối hộp, có khung* đặt trên nền gạch xám. Mỗi khối hộp đều có *tác phẩm nghệ thuật độc đáo, rực rỡ lấy cảm hứng từ Nhật Bản* trên các tấm bán trong suốt, gợi ý một công trình lắp đặt mô-đun phức tạp."
+                "descriptionEN": "With an open design that allows natural light to enter, creating a welcoming feeling and also making it easy to see other blocks, stimulating the curiosity of visitors, leading through the remaining “elements”.",
+                "descriptionVI": "Với thiết kế mở cho phép ánh sáng tự nhiên lọt vào tạo cảm giác chào đón và cũng dễ dàng thấy được các hình khối khác, kích thích sự tò mò của người tham quan, dẫn dắt qua các “nhân tố” còn lại. "
             },
             {
                 "src": "/assets/printed-ritual/printed-ritual-6.png",
-                "descriptionEN": "An *aerial render* showing a cluster of five *cubical, framed enclosures* set on a gray tiled ground. Each cube features *unique, vibrant Japanese-inspired artwork* on its translucent panels, suggesting a complex modular installation.",
-                "descriptionVI": "Một *bản dựng hình từ trên cao* cho thấy một cụm năm *khối hộp, có khung* đặt trên nền gạch xám. Mỗi khối hộp đều có *tác phẩm nghệ thuật độc đáo, rực rỡ lấy cảm hứng từ Nhật Bản* trên các tấm bán trong suốt, gợi ý một công trình lắp đặt mô-đun phức tạp."
+                "descriptionEN": "Thanks to Kornit Digital's large format printing technology, the designer's patterns and artistic intentions were perfectly expressed, contributing to the success and completeness of the exhibition.",
+                "descriptionVI": "Nhờ công nghệ in khổ lớn của Kornit Digital, các hoa văn và dụng ý nghệ thuật của nhà thiết kế được thể hiện hoàn hảo, góp phần giúp cho buổi triển lãm thành công và trọn vẹn."
             }
         ]
     },
     {
         "slug": "tanphong-house",
+        "comletedYear": "2025",
         "titleEN": "Tan Phong House",
         "titleVI": "Tan Phong House",
-        "descriptionEN": "**Tanphong House** is a multi-story residence characterized by a fusion of *contemporary and classic interior design*. The home uses a rich, *neutral color palette* and *warm wood accents*. Key artistic features include a large *monochrome mural of classical ruins* on the hallway wall, a *dramatic starburst wood veneer* on the staircase, and integrated *custom white shelving*. The furnishing combines *high-end modern sofas* with antique details like *crystal sconces* and *layered layered* drapes, balancing sophistication and cozy residential comfort.",
-        "descriptionVI": "**Tanphong House** là một ngôi nhà phố nổi bật bởi sự kết hợp giữa *phong cách nội thất đương đại và cổ điển*. Ngôi nhà sử dụng bảng màu phong phú gồm *tông trung tính và điểm nhấn gỗ ấm áp*, tạo ra không gian sống tinh tế. Các điểm nhấn nghệ thuật chính bao gồm *bức bích họa đơn sắc lớn về tàn tích cổ điển* trên tường hành lang, *gỗ veneer hình tia ấn tượng* trên cầu thang, và *kệ âm tường màu trắng tùy chỉnh* tích hợp. Đồ nội thất kết hợp *sofa hiện đại cao cấp* với các chi tiết cổ điển như *đèn pha lê gắn tường và rèm cửa xếp lớp dày*, cân bằng giữa sự sang trọng và thoải mái.",
+        "designerVI": "Ngô Đình Tài",
+        "designerEN": "Ngo Dinh Tai",
+        "clientEN": "Personal Project",
+        "clientVI": "Khách hàng cá nhân",
+        "descriptionEN": "Located in Dong Nai, the project is a harmonious combination of colors, materials and light, creating a luxurious and cozy space. Every detail is carefully crafted to bring the most exquisite living experience.",
+        "descriptionVI": "Toạ lạc tại Đồng Nai, dự án là một sự kết hợp hài hoà giữa màu sắc, vật liệu và ánh sáng đem đến một không gian sang trọng và ấm cúng. Từng chi tiết đều được trau chuốt cẩn thận để đem lại trải nghiệm sống tinh tế nhất.",
         "images": [
             {
                 "src": "/assets/tanphong-house/tanphong-house-1.png",
-                "descriptionEN": "An elevated view of the *Tanphong House* exterior in a dense residential area. The house features a *tiered, multi-level design* with a *dark terracotta tile roof* and *neutral-colored facade* with light railings and balconies.",
-                "descriptionVI": "Một góc nhìn từ trên cao về ngoại thất *Tanphong House* trong khu dân cư đông đúc. Ngôi nhà có *thiết kế phân tầng, nhiều cấp độ* với *mái ngói terracotta sẫm màu* và *mặt tiền màu trung tính* với lan can và ban công sáng màu."
+                "descriptionEN": "The lounge area is furnished with large chairs, prioritizing the relaxation of family members.",
+                "descriptionVI": "Khu vực phòng lounge được bố trí những chiếc ghế size lớn, ưu tiên trong việc tạo cảm giác thư giãn cho các thành viên trong gia đình."
             },
             {
                 "src": "/assets/tanphong-house/tanphong-house-2.png",
-                "descriptionEN": "The exterior of a multi-story urban house with a *layered, modern facade*. The design combines white stucco, *beige horizontal siding*, glass balconies, and a distinctive *yellow awning* on the top floor.",
-                "descriptionVI": "Mặt tiền một ngôi nhà phố nhiều tầng với *phong cách hiện đại, phân lớp*. Thiết kế kết hợp vữa trắng, *tấm ốp ngang màu be*, ban công kính, và một *mái hiên màu vàng* nổi bật ở tầng trên cùng."
+                "descriptionEN": "The stools can be used as decorative tables and can also be \"*transformed*\" into chairs when the family organizes large parties.",
+                "descriptionVI": "Những chiếc đôn vừa có tác dụng làm bàn trang trí, vừa có thể “biến” thành những chiếc ghế ngồi khi gia đình tổ chức những bữa tiệc lớn."
             },
             {
                 "src": "/assets/tanphong-house/tanphong-house-3.png",
-                "descriptionEN": "An interior view showing a hallway next to built-in white shelving. The dominant feature is a wall covered in a *large, detailed mural* depicting *classical ruins* (likely Roman or Greek) in a monochrome, etched style.",
-                "descriptionVI": "Khung cảnh nội thất thể hiện hành lang bên cạnh kệ âm tường màu trắng. Điểm nhấn là bức tường được phủ bởi *bức bích họa lớn, chi tiết* mô tả *tàn tích cổ điển* (có lẽ là La Mã hoặc Hy Lạp) theo phong cách đơn sắc, khắc họa."
+                "descriptionEN": "The entrance to the powder room on the first floor is hidden by a secret door system, decorated with imported wallpaper from France to add sophistication to the space.",
+                "descriptionVI": "Lối vào phòng powder room ở tầng 1 được ẩn đi bằng hệ cửa bí mật, trang trí với giấy dán tường nhập khẩu từ Pháp giúp tăng thêm sự tinh tế cho không gian."
             },
             {
                 "src": "/assets/tanphong-house/tanphong-house-4.png",
-                "descriptionEN": "A close-up of the *classical ruin mural* on the wall, meticulously rendered in a *detailed, engraved style* with a dramatic sky. The contrast between the antique wallpaper and the *modern, minimalistic wall colors* is clear.",
-                "descriptionVI": "Ảnh cận cảnh *bức bích họa tàn tích cổ điển* trên tường, được thực hiện tỉ mỉ theo *phong cách khắc họa, chi tiết* với bầu trời ấn tượng. Sự tương phản giữa giấy dán tường cổ điển và *màu tường hiện đại, tối giản* rất rõ ràng."
+                "descriptionEN": "The harmonious combination of different materials such as crystal, wallpaper, curtain fabric with neutral colors makes the house more cozy and relaxing.",
+                "descriptionVI": "Kết hợp hài hoà nhiều vật liệu khác nhau như pha lê, giấy dán tường, vải rèm với màu sắc trung tính làm cho ngôi nhà thêm ấm cúng và thư giãn."
             },
             {
                 "src": "/assets/tanphong-house/tanphong-house-5.png",
-                "descriptionEN": "A cozy living room corner featuring a *light gray fabric sofa* and a gold accent side table. A large artwork with *religious or baroque* themes hangs above, complemented by heavy *taupe curtains*.",
-                "descriptionVI": "Góc phòng khách ấm cúng với *ghế sofa vải màu xám nhạt* và bàn phụ bằng kim loại màu vàng. Một tác phẩm nghệ thuật lớn với chủ đề *tôn giáo hoặc baroque* được treo phía trên, kết hợp với *rèm cửa màu taupe* dày."
+                "descriptionEN": "A poetic reading corner thanks to the use of the large window frame as the background and the harmonious light in the bedroom.",
+                "descriptionVI": "Một góc đọc sách đầy chất thơ nhờ tận dụng background là khung cửa lớn và ánh sáng hài hoà trong phòng ngủ.x"
             },
             {
                 "src": "/assets/tanphong-house/tanphong-house-6.png",
-                "descriptionEN": "A detail shot focusing on the window treatment and lighting. The image shows neatly pleated *taupe/beige curtains* against a mustard-yellow wall, illuminated by a classic *crystal sconce* with two white shades.",
-                "descriptionVI": "Ảnh chi tiết tập trung vào rèm cửa và ánh sáng. Bức ảnh cho thấy *rèm cửa màu taupe/be* được xếp nếp gọn gàng trên nền tường vàng mù tạt, được chiếu sáng bằng *đèn pha lê gắn tường* cổ điển với hai chụp đèn trắng."
+                "descriptionEN": "The partition between the living room and the stairs is a macassar veneer wooden wall system made from many layers of wood, creating an impressive effect for the viewer.",
+                "descriptionVI": "Vách ngăn giữa phòng khách và cầu thang là một hệ vách gỗ veneer macassar được ghép từ nhiều lớp gỗ tạo hành hiệu ứng ấn tượng cho người xem."
             },
             {
                 "src": "/assets/tanphong-house/tanphong-house-7.png",
-                "descriptionEN": "A close-up of a reading nook, featuring a round *wicker coffee table* and an armchair with a *geometric beige pattern*. The backdrop is a window covered by *sheer white curtains*, creating soft, diffused light.",
-                "descriptionVI": "Ảnh cận cảnh góc đọc sách, nổi bật với *bàn cà phê mây tròn* và ghế bành có *hoa văn hình học màu be*. Phông nền là cửa sổ được che bằng *rèm trắng mỏng*, tạo ra ánh sáng khuếch tán, dịu nhẹ."
+                "descriptionEN": "The garden is simply arranged with a set of tables and chairs imported from Italy combined with pine trees that have both feng shui meaning and bring a cool feeling of the Tuscany countryside in Italy.",
+                "descriptionVI": "Sân vườn được bố trí đơn giản với bộ bàn ghế nhập khẩu từ Ý kết hợp với các cây Tùng vừa có ý nghĩa phong thuỷ, vừa đem lại cảm giác thoáng mát của vùng quê Tuscany nước Ý."
             },
             {
                 "src": "/assets/tanphong-house/tanphong-house-8.png",
-                "descriptionEN": "A wide view of the living room featuring a *light gray fabric sofa* and a *dark leather Barcelona-style chair*. The room is brightened by natural light filtering through *sheer and taupe layered curtains*, set against a *herringbone wood floor*.",
-                "descriptionVI": "Một góc nhìn rộng phòng khách với *sofa vải màu xám nhạt* và *ghế da màu tối kiểu Barcelona*. Phòng được chiếu sáng bởi ánh sáng tự nhiên qua *rèm hai lớp mỏng và màu taupe*, đặt trên *sàn gỗ xương cá*."
+                "descriptionEN": "The house after being renovated becomes prominent but does not overwhelm the surrounding space, a symbol of the quiet luxury philosophy that the studio always aims for.",
+                "descriptionVI": "Ngôi nhà sau khi được cải tạo trở nên nổi bật nhưng không lấn át không gian xung quanh, một biểu tượng của triết lý quiet luxury mà studio luôn hướng tới."
             }
         ]
     },
     {
         "slug": "seed",
-        "titleEN": "Seed Library",
-        "titleVI": "Seed Library",
-        "descriptionEN": "To be added later",
-        "descriptionVI": "To be added later",
+        "comletedYear": "2022",
+        "titleEN": "Seed Center",
+        "titleVI": "Seed Center",
+        "designerVI": "Ngô Đình Tài",
+        "designerEN": "Ngo Dinh Tai",
+        "clientEN": "Capstone Project",
+        "clientVI": "Đồ án tốt nghiệp",
+        "prize": "Singapore Interior Design Award (SIDA)",
+        "descriptionEN": "Seed is a startup project for young people in Vietnam, located in Ho Chi Minh City, the financial center of Vietnam.",
+        "descriptionVI": "Seed là một dự án khởi nghiệp dành cho giới trẻ tại Việt Nam, tọa lạc tại thành phố Hồ Chí Minh, trung tâm tài chính của Việt Nam. ",
         "images": [
             {
                 "src": "/assets/seed/seed-1.png",
-                "descriptionEN": "To be added later",
-                "descriptionVI": "To be added later"
+                "descriptionEN": "The project to renovate an old high school located in Binh Thanh district. By removing the fence walls on the front of the building, the interior area is opened up and creates an invitation to step into the center.",
+                "descriptionVI": "Dự án cải tạo lại một ngôi trường cấp 3 cũ nằm ở quận Bình Thạnh. Bằng cách đập bỏ các bức tường rào ở mặt tiền của công trình, diện tích bên trong được mở ra và tạo sự mời gọi bước vào trung tâm."
             },
             {
                 "src": "/assets/seed/seed-2.png",
-                "descriptionEN": "To be added later",
-                "descriptionVI": "To be added later"
+                "descriptionEN": "With the concept of bringing nature inside, the courtyard and interior areas are opened up to help people move freely, increasing the connection between people and nature.",
+                "descriptionVI": "Với concept đem thiên nhiên vào trong, phần sân trong và các khu vực nội thất được mở ra giúp mọi người có thể tự do di chuyển qua lại, tăng sự kết nối giữa con người với thiên nhiên."
             },
             {
                 "src": "/assets/seed/seed-3.png",
-                "descriptionEN": "To be added later",
-                "descriptionVI": "To be added later"
+                "descriptionEN": "The staircase system connecting the functional rooms together creates convenience in moving as well as helps increase the ability to connect people with people.",
+                "descriptionVI": "Hệ cầu thang nối liền các phòng chức năng với nhau tạo sự thuận tiện trong di chuyển cũng như giúp tăng khả năng kết nối con người với con người."
             },
             {
                 "src": "/assets/seed/seed-4.png",
-                "descriptionEN": "To be added later",
-                "descriptionVI": "To be added later"
+                "descriptionEN": "The research areas are designed to be open to help people comfortably exchange with each other in the early stages of the startup program.",
+                "descriptionVI": "Các khu vực nghiên cứu được thiết kế mở để giúp mọi người thoải mái trao đổi với nhau trong giai đoạn đầu của chương trình khởi nghiệp."
             },
             {
                 "src": "/assets/seed/seed-5.png",
-                "descriptionEN": "To be added later",
-                "descriptionVI": "To be added later"
+                "descriptionEN": "Interspersed with research rooms are places for rest, conversation and group meetings of start-ups.",
+                "descriptionVI": "Xen kẽ các phòng nghiên cứu là nơi nghỉ ngơi, trò chuyện và họp nhóm của các start up."
             },
             {
                 "src": "/assets/seed/seed-6.png",
-                "descriptionEN": "To be added later",
-                "descriptionVI": "To be added later"
+                "descriptionEN": "By using a system of rough bricks arranged alternately as partitions, it not only allows light to enter but also creates aesthetic beauty for the project.",
+                "descriptionVI": "Bằng việc dùng hệ gạch thô xếp xen kẽ làm vách ngăn vừa giúp ánh sáng có thể lọt vào trong, vừa tạo nét đẹp thẩm mỹ cho công trình."
             }
         ]
     }
