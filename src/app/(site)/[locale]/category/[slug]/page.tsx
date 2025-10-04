@@ -45,7 +45,7 @@ export default async function CategoryPage({ params }: PageProps) {
                 <h1 className="text-3xl md:text-6xl text-gray-900 font-bold w-full">
                     {title}
                 </h1>
-                <div className="flex justify-between pt-2 text-gray-500 font-light">
+                <div className="grid md:flex md:justify-between pt-2 text-gray-500 font-light">
                     <span><span className="font-bold">COMPLETED: </span>{project.comletedYear}</span>
                     <span><span className="font-bold">DESIGNER: </span>{locale === "en" ? project.designerEN : project.designerVI}</span>
                     <span><span className="font-bold">CLIENT: </span>{locale === "en" ? project.clientEN : project.clientVI}</span>
