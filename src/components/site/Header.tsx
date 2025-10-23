@@ -13,6 +13,11 @@ const categories = [
         displayNameEN: "Về Chúng Tôi"
     },
     {
+        slug: "category/thanhbinh-apartment",
+        displayNameVI: "Thanh Binh Apartment",
+        displayNameEN: "Thanh Binh Apartment"
+    },
+    {
         slug: "category/tanphong-house",
         displayNameVI: "Tan Phong House",
         displayNameEN: "Tan Phong House"
