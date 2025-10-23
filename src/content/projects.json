@@ -190,5 +190,59 @@
                 "descriptionVI": "Bằng việc dùng hệ gạch thô xếp xen kẽ làm vách ngăn vừa giúp ánh sáng có thể lọt vào trong, vừa tạo nét đẹp thẩm mỹ cho công trình."
             }
         ]
+    },
+    {
+        "slug": "thanhbinh-apartment",
+        "comletedYear": "2025",
+        "titleEN": "Thanh Binh Apartment",
+        "titleVI": "Thanh Binh Apartment",
+        "designerVI": "Ngô Đình Tài",
+        "designerEN": "Ngo Dinh Tai",
+        "clientEN": "Personal",
+        "clientVI": "Khách hàng cá nhân",
+        "descriptionEN": "Located in the center of Bien Hoa city, the renovated apartment has a modern yet cozy beauty. The blue cabinet system plays a highlight role for the apartment, connecting the spaces and bringing a sense of spaciousness and harmony to the whole. All are gently combined to create a minimalist, relaxing living space that clearly reflects the personality of the owner.",
+        "descriptionVI": "Nằm tại trung tâm thành phố Biên Hoà, căn hộ được cải tạo mang vẻ đẹp hiện đại nhưng vẫn ấm cúng. Hệ tủ màu xanh đóng vai trò điểm nhấn cho căn hộ, vừa liên kết các không gian, vừa mang lại cảm giác rộng rãi và hài hòa cho tổng thể. Tất cả được kết hợp nhẹ nhàng để tạo nên một không gian sống tinh giản, thư thái và phản ánh rõ cá tính của gia chủ.",
+        "images": [
+            {
+                "src": "/assets/thanhbinh-apartment/thanhbinh-apartment-1.png",
+                "descriptionEN": "",
+                "descriptionVI": ""
+            },
+            {
+                "src": "/assets/thanhbinh-apartment/thanhbinh-apartment-2.png",
+                "descriptionEN": "",
+                "descriptionVI": ""
+            },
+            {
+                "src": "/assets/thanhbinh-apartment/thanhbinh-apartment-3.png",
+                "descriptionEN": "",
+                "descriptionVI": ""
+            },
+            {
+                "src": "/assets/thanhbinh-apartment/thanhbinh-apartment-4.png",
+                "descriptionEN": "",
+                "descriptionVI": ""
+            },
+            {
+                "src": "/assets/thanhbinh-apartment/thanhbinh-apartment-5.png",
+                "descriptionEN": "",
+                "descriptionVI": ""
+            },
+            {
+                "src": "/assets/thanhbinh-apartment/thanhbinh-apartment-6.png",
+                "descriptionEN": "",
+                "descriptionVI": ""
+            },
+            {
+                "src": "/assets/thanhbinh-apartment/thanhbinh-apartment-7.png",
+                "descriptionEN": "",
+                "descriptionVI": ""
+            },
+            {
+                "src": "/assets/thanhbinh-apartment/thanhbinh-apartment-8.png",
+                "descriptionEN": "",
+                "descriptionVI": ""
+            }
+        ]
     }
 ]

@@ -41,7 +41,7 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                         >
                             <div className="relative w-full h-[20vh] md:h-[40vh]">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop"
+                                    src="/assets/profile.png"
                                     alt="about"
                                     fill
                                     className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
@@ -57,8 +57,12 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                 </div>
                             </div>
                         </Link>
-                        <div className="hidden md:flex justify-center items-center w-1/4 bg-gray-300">
-                            <span>About Information</span>
+                        <div className="hidden md:flex justify-center items-center w-1/4 bg-gray-300 p-4">
+                            <span className="italic text-gray-500 font-semilight">
+                                {currentLocale === 'vi' ? '"Là một nhà thiết kế trẻ thuộc thế hệ sáng tạo mới của Việt Nam. Với tư duy thẩm mỹ hiện đại cùng niềm đam mê khám phá vẻ đẹp trong không gian sống, anh xem thiết kế là hành trình kết nối giữa nghệ thuật, văn hoá và cảm xúc con người"'
+                                    : '"As a young designer of the new creative generation of Vietnam. With modern aesthetic thinking and a passion for discovering beauty in living spaces, he sees design as a journey connecting art, culture and human emotions."'
+                                }
+                            </span>
                         </div>
                     </div>
                 </section>

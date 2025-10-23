@@ -4,6 +4,11 @@
     "subtitle": "Crafting architecture, interiors, exhibitions and decorations with a human-centric approach.",
     "categories": [
         {
+            "slug": "thanhbinh-apartment",
+            "label": "Thanh Binh Apartment",
+            "year": "2025"
+        },
+        {
             "slug": "tanphong-house",
             "label": "Tan Phong House",
             "year": "2025"

@@ -4,6 +4,11 @@
     "subtitle": "Thiết kế kiến trúc, nội thất, triển lãm và trang trí với cách tiếp cận lấy con người làm trung tâm.",
     "categories": [
         {
+            "slug": "thanhbinh-apartment",
+            "label": "Thanh Binh Apartment",
+            "year": "2025"
+        },
+        {
             "slug": "tanphong-house",
             "label": "Tan Phong House",
             "year": "2025"
