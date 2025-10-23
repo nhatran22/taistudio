@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone } from 'lucide-react';
+import { Instagram, Mail, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
@@ -13,6 +13,11 @@ const Contact = () => {
             icon: <Phone className="h-4 w-4" />,
             label: 'Phone',
             href: 'tel:0862676117'
+        },
+        {
+            icon: <Instagram className="h-4 w-4" />,
+            label: 'Instagram',
+            href: 'https://www.instagram.com/dinh_tai_studio/'
         }
     ];
 
@@ -25,7 +30,7 @@ const Contact = () => {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pb-4">
                 {contactInfo.map((info, index) => (
                     <motion.div
                         key={index}

@@ -116,7 +116,7 @@ export function Header() {
     const visibilityClass = visible ? 'translate-y-0' : '-translate-y-full';
 
     // The component name on the left (using a placeholder like in your code)
-    const brandName = "Studio"; // You can change this to "Foster + Partners" if you like
+    const brandName = "Dinh Tai Studio"; // You can change this to "Foster + Partners" if you like
 
     return (
         <header
