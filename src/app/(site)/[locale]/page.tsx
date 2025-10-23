@@ -48,11 +48,11 @@ export default async function Landing({ params }: { params: Promise<{ locale: st
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                                 <div className="absolute w-full bottom-0 left-0 p-2 text-white z-10 bg-gradient-to-b from-black/80 to-transparent">
-                                    <p className="text-2xl md:text-2xl font-semibold drop-shadow-lg">
-                                        {currentLocale === 'vi' ? 'Về Chúng Tôi' : 'About Us'}
+                                    <p className="text-[16px] md:text-2xl font-semibold drop-shadow-lg">
+                                        {currentLocale === 'vi' ? 'Đình Tài' : 'Dinh Tai'}
                                     </p>
-                                    <p className="italic text-gray-500 font-light">
-                                        {currentLocale === 'vi' ? 'Khám phá ngay' : 'Discover now'}
+                                    <p className="text-[12px] md:text-[14px] italic text-gray-500 font-light">
+                                        {currentLocale === 'vi' ? 'Xem Thêm' : 'See more'}
                                     </p>
                                 </div>
                             </div>

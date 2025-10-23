@@ -22,8 +22,6 @@ export interface Project {
 
 export interface Images {
     src: string,
-    descriptionVI: string,
-    descriptionEN: string
 }
 
 export interface PageProps {
