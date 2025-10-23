@@ -33,7 +33,7 @@ export default function HeroSection({ language }: { language: string }) {
             {/* Text content */}
             <div className="relative z-10 flex h-full w-full items-center px-8 md:px-16">
                 <div className="w-full text-white">
-                    <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                    <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
                         {language === 'vi' ? categories[index].titleVI : categories[index].titleEN}
                     </h1>
                     <p className="mt-2 text-xl md:text-2xl text-gray-200">
