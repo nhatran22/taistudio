@@ -8,7 +8,7 @@ import categories from "@/content/categories.json";
 export const dynamic = "error";
 
 export const metadata: Metadata = {
-    title: "Studio Portfolio",
+    title: "Tai Studio",
 };
 
 const SUPPORTED_LOCALES = ["en", "vi"] as const;
