@@ -42,7 +42,7 @@ export default async function CategoryPage({ params }: PageProps) {
     return (
         <div className="pt-24 pb-20 bg-white min-h-screen px-4 md:px-8">
             <div className="w-full mx-auto">
-                <h1 className="text-3xl md:text-6xl text-gray-900 font-bold w-full">
+                <h1 className="text-3xl md:text-6xl text-gray-900 font-bold w-full text-center">
                     {title}
                 </h1>
                 <div className="grid md:flex md:justify-between pt-2 text-gray-500 font-light">
@@ -53,7 +53,7 @@ export default async function CategoryPage({ params }: PageProps) {
                         <span><span className="font-bold">AWARD: </span>{project.prize}</span>
                     )}
                 </div>
-                <p className="mt-6 text-gray-700 w-full text-xm md:text-base">
+                <p className="mt-6 text-gray-700 w-1/2 text-xm md:text-base mx-auto text-center">
                     {parseDescription(desc)}
                 </p>
             </div>
