@@ -41,11 +41,11 @@ export default async function CategoryPage({ params }: PageProps) {
 
     return (
         <div className="pt-24 pb-20 bg-white min-h-screen px-4 md:px-8">
-            <div className="w-full mx-auto">
+            <div className="max-w-4xl mx-auto">
                 <h1 className="text-3xl md:text-6xl text-gray-900 font-bold w-full text-center">
                     {title}
                 </h1>
-                <div className="grid md:flex md:justify-between pt-2 md:px-56 text-gray-500 font-light">
+                <div className="grid md:flex md:justify-between pt-2 text-gray-500 font-light">
                     <span><span className="font-bold">COMPLETED: </span>{project.comletedYear}</span>
                     <span><span className="font-bold">DESIGNER: </span>{locale === "en" ? project.designerEN : project.designerVI}</span>
                     <span><span className="font-bold">CLIENT: </span>{locale === "en" ? project.clientEN : project.clientVI}</span>
@@ -53,7 +53,7 @@ export default async function CategoryPage({ params }: PageProps) {
                         <span><span className="font-bold">AWARD: </span>{project.prize}</span>
                     )}
                 </div>
-                <p className="mt-6 text-gray-700 w-full md:w-1/2 text-xm md:text-base mx-auto text-center">
+                <p className="leading-relaxed mt-6 text-gray-700 w-full md:max-w-4xl mx-auto text-xm md:text-base text-center break-words">
                     {parseDescription(desc)}
                 </p>
             </div>
