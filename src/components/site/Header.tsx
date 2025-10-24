@@ -32,7 +32,11 @@ const categories = [
         displayNameVI: "Lavazza Coffee",
         displayNameEN: "Lavazza Coffee"
     },
-
+    {
+        slug: "category/wavelet",
+        displayNameVI: "Wavelet",
+        displayNameEN: "Wavelet"
+    },
     {
         slug: "category/seed",
         displayNameVI: "Seed",

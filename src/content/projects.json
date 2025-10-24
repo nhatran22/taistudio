@@ -180,5 +180,34 @@
                 "src": "/assets/thanhbinh-apartment/thanhbinh-apartment-8.png"
             }
         ]
+    },
+    {
+        "slug": "wavelet",
+        "comletedYear": "2023",
+        "titleEN": "Wavelet",
+        "titleVI": "Wavelet",
+        "designerVI": "Ngô Đình Tài + Kasagi Chau Studio + Levina Larissa ",
+        "designerEN": "Ngo Dinh Tai + Kasagi Chau Studio + Levina Larissa ",
+        "clientEN": "Raffles Milano",
+        "clientVI": "Raffles Milano",
+        "descriptionEN": "Inspired by the natural vortex of water, Wavelet not only redefines the concept of a faucet — it also offers a fresh perspective on the intersection of function and art. Going beyond its usual cleaning role, Wavelet is like a work of art in the living space. With a minimalist design and integrated modern technology, the project aims to change the way users perceive and appreciate an object that is often overlooked in everyday life.",
+        "descriptionVI": "Lấy cảm hứng từ những vòng xoáy nước trong tự nhiên, Wavelet không chỉ tái định nghĩa khái niệm về một chiếc vòi nước — mà còn mang đến một góc nhìn mới mẻ về sự giao thoa giữa công năng và nghệ thuật. Vượt ra khỏi vai trò làm sạch thông thường, Wavelet như một tác phẩm nghệ thuật trong không gian sống. Với thiết kế tối giản và tích hợp công nghệ hiện đại, dự án hướng đến việc thay đổi cách người dùng cảm nhận và trân trọng một vật dụng vốn thường bị xem nhẹ trong đời sống hằng ngày.",
+        "images": [
+            {
+                "src": "/assets/wavelet/wavelet-1.png"
+            },
+            {
+                "src": "/assets/wavelet/wavelet-2.png"
+            },
+            {
+                "src": "/assets/wavelet/wavelet-3.png"
+            },
+            {
+                "src": "/assets/wavelet/wavelet-4.png"
+            },
+            {
+                "src": "/assets/wavelet/wavelet-5.png"
+            }
+        ]
     }
 ]

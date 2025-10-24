@@ -28,6 +28,13 @@
         "year": "2023"
     },
     {
+        "slug": "wavelet",
+        "titleEN": "Wavelet",
+        "titleVI": "Wavelet",
+        "cover": "/assets/wavelet/wavelet-1.png",
+        "year": "2022"
+    },
+    {
         "slug": "seed",
         "titleEN": "Seed",
         "titleVI": "Seed",
