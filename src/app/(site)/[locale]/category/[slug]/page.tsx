@@ -53,7 +53,7 @@ export default async function CategoryPage({ params }: PageProps) {
                         <span><span className="font-bold">AWARD: </span>{project.prize}</span>
                     )}
                 </div>
-                <p className="mt-6 text-gray-700 w-1/2 text-xm md:text-base mx-auto text-center">
+                <p className="mt-6 text-gray-700 w-full md:w-1/2 text-xm md:text-base mx-auto text-center">
                     {parseDescription(desc)}
                 </p>
             </div>
